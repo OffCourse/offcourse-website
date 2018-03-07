@@ -1,0 +1,32 @@
+@import '../../semantic/themes/offcourse/globals/site.variables';
+
+.Hero {
+  padding: 8rem 0;
+  position: relative;
+}
+
+
+.Hero__background-image {
+  background-clip: border-box;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -100;
+
+  &:after {
+    background: fade(@offWhite, 85%);
+    content: " ";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -90;
+
+  }
+}

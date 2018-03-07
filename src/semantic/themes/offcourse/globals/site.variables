@@ -1,0 +1,74 @@
+@import '../../default/globals/site.variables';
+
+/*******************************
+         Site Settings
+*******************************/
+
+@importGoogleFonts: false;
+@fontName: 'NittiGrotesk';
+@accentFontName: 'NittiBold';
+@headerFont: @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@pageFont: @fontName, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@headerFontWeight : 700;
+
+@offWhite: #f4f6f4;
+@pageBackground: @offWhite;
+
+@relativeBorderRadius: 0px;
+@absoluteBorderRadius: 0px;
+
+/*-------------------
+       Links
+--------------------*/
+
+@linkColor           : @textColor;
+@linkUnderline       : none;
+@linkHoverUnderline  : @linkUnderline;
+
+@red              : #E34D2F;
+@orange           : #E34B25;
+@yellow           : #E6D01E;
+@olive            : #3A676E;
+@green            : #A4CD39;
+@blue             : #72C7B3;
+@grey             : #C0C4C1;
+@black            : #000000;
+
+@primaryColor     : @yellow;
+
+/*******************************
+           Power-User
+*******************************/
+
+
+/*-------------------
+    Emotive Colors
+--------------------*/
+
+/* Positive */
+@positiveColor           : @green;
+@positiveBackgroundColor : #FCFFF5;
+@positiveBorderColor     : #A3C293;
+@positiveHeaderColor     : #1A531B;
+@positiveTextColor       : #2C662D;
+
+/* Negative */
+@negativeColor           : @red;
+@negativeBackgroundColor : #FFF6F6;
+@negativeBorderColor     : #E0B4B4;
+@negativeHeaderColor     : #912D2B;
+@negativeTextColor       : #9F3A38;
+
+/* Info */
+@infoColor              : #31CCEC;
+@infoBackgroundColor    : @green;
+@infoBorderColor        : #A9D5DE;
+@infoHeaderColor        : #0E566C;
+@infoTextColor          : @black;
+
+/* Warning */
+@warningColor           : #F2C037;
+@warningBorderColor     : #C9BA9B;
+@warningBackgroundColor : @yellow;
+@warningHeaderColor     : #794B02;
+@warningTextColor       : @black;

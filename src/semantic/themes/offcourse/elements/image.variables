@@ -1,0 +1,14 @@
+/*******************************
+            Image
+*******************************/
+
+/*-------------------
+       Variations
+--------------------*/
+
+/* Floated */
+@floatedHorizontalMargin: 1em;
+@floatedVerticalMargin: 0em;
+
+/* Size */
+@miniWidth: 50px;

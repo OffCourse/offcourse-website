@@ -1,0 +1,9 @@
+.ui.cards > .card,
+.ui.card {
+    border-bottom: 2px @grey solid;
+}
+
+.ui.cards > .card,
+.ui.card:hover {
+    border-bottom: 2px @primaryColor solid;
+}

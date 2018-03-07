@@ -1,0 +1,29 @@
+/*******************************
+             Menu
+*******************************/
+
+/*-------------------
+      Collection
+--------------------*/
+
+/* Menu */
+@borderWidth: 0px;
+@boxShadow: none;
+@border: @borderWidth solid @borderColor;
+@minHeight: (@itemVerticalPadding * 2) + 1em;
+@margin: 0;
+
+/* Menu Item */
+@itemVerticalPadding: @relativeMini;
+@itemHorizontalPadding: @relativeSmall;
+
+/* Divider */
+@dividerSize: 0px;
+
+/*--------------
+    Couplings
+---------------*/
+
+/* Button */
+@buttonVerticalPadding: @1px; 
+@buttonHorizontalPadding: 0px; 

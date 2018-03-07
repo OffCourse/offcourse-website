@@ -1,0 +1,18 @@
+/*******************************
+        Global Overrides
+*******************************/
+
+@font-face  {
+  font-family: 'NittiGrotesk';
+  src:url('../../../assets/fonts/NGN.woff') format('woff');
+}
+
+@font-face  {
+  font-family: 'NittiNormal';
+  src:url('../../../assets/fonts/NN.woff') format('woff');
+}
+
+@font-face  {
+  font-family: 'NittiBold';
+  src:url('../../../assets/fonts/NB.woff') format('woff');
+}

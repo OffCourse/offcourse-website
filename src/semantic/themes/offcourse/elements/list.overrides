@@ -1,0 +1,20 @@
+/*******************************
+            List
+*******************************/
+
+/*******************************
+            Content
+*******************************/
+
+
+/* List Item */
+ul.ui.list li,
+ol.ui.list li,
+.ui.list > .item,
+.ui.list .list > .item {
+  font-weight: @headerFontWeight;
+}
+
+.ui.list > .item:hover a {
+    color: @white;
+}

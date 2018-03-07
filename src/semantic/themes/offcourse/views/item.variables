@@ -1,0 +1,46 @@
+/*******************************
+             Item
+*******************************/
+
+/*-------------------
+         View
+--------------------*/
+
+/* Responsive */
+@itemSpacing: 1em;
+@imageWidth: 175px;
+@contentImageDistance: 1em;
+
+@tabletItemSpacing: 1em;
+@tabletImageWidth: 150px;
+@tabletContentImageDistance: 1em;
+
+@mobileItemSpacing: 2em;
+@mobileImageWidth: auto;
+@mobileImageMaxHeight: 250px;
+@mobileContentImageDistance: 1em;
+
+/*-------------------
+       Content
+--------------------*/
+
+/* Image */
+@imagePadding: 0em;
+
+/* Header */
+@headerMargin: -@lineHeightOffset 0em 0em;
+@headerFontWeight: bold;
+@headerFontSize: @relativeBig;
+@headerColor: @darkTextColor;
+
+/* Metadata */
+@metaMargin: 0em 0em 0.4em;
+@metaColor: rgba(0, 0, 0, 1.0);
+@metaFontSize: 0.8em;
+
+/* Description */
+@descriptionDistance: 0.1em;
+@descriptionMaxWidth: auto;
+@descriptionFontSize: 0.8em;
+@descriptionLineHeight: (@lineHeight * 0.9);
+@descriptionColor: @textColor;

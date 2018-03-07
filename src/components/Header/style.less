@@ -1,0 +1,24 @@
+@import '../../semantic/themes/offcourse/globals/site.variables';
+@import '../../semantic/themes/offcourse/elements/button.variables';
+
+.Header {
+  border-top: 4px solid @black;
+  left: 0;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 600;
+
+  .menu {
+    background: none;
+    padding: 0 1rem;
+
+    .positive.button {
+      padding: @verticalPadding @horizontalPadding !important;
+    }
+  }
+
+  &.scrolled {
+    background: @white;
+  }
+}

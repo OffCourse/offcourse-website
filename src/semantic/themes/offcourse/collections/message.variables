@@ -1,0 +1,33 @@
+/*******************************
+            Message
+*******************************/
+
+// @textColor
+
+
+/*-------------------
+       Elements
+--------------------*/
+
+@verticalMargin: 2em;
+@borderWidth: 0;
+@verticalPadding: 0.5em;
+
+/* Paragraph */
+@messageTextOpacity: 1;
+
+/* List */
+@listOpacity: 1;
+
+/*-------------------
+        Types
+--------------------*/
+
+/* Colors */
+@redBoxShadow:
+  0px 0px 0px @borderWidth @redBorderColor inset,
+  @shadowShadow
+;
+@yellowBoxShadow:
+  0px 0px 0px 0px
+;

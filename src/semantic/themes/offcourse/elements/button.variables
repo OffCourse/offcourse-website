@@ -1,0 +1,34 @@
+@import '../../default/elements/button.variables';
+
+/*******************************
+            Button
+*******************************/
+
+/*-------------------
+       Element
+--------------------*/
+
+/* Button */
+@backgroundColor: #000000;
+
+/* Text */
+@textColor: #FFFFFF;
+
+
+/*-------------------
+        States
+--------------------*/
+
+/* Basic Hover */
+@hoverBackgroundColor: @primaryColor;
+
+
+/*-------------------
+        Types
+--------------------*/
+
+/* Basic */
+@basicBorderSize: 0;
+@basicColoredBorderSize: 0;
+@basicTextColor: @black;
+@basicFontWeight: bold;

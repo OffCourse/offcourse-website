@@ -1,0 +1,24 @@
+/*******************************
+             List
+*******************************/
+
+/*-------------------
+         View
+--------------------*/
+
+
+/*-------------------
+      Elements
+--------------------*/
+
+/* Selection List States */
+@selectionListBackground: @offWhite;
+
+/* Selection List */
+@selectionListItemMargin: @2px;
+@selectionListItemBorderRadius: 0em;
+
+@selectionListActiveBackground: @grey;
+@selectionListActiveColor: @white;
+@selectionListHoverBackground: @primaryColor;
+@selectionListHoverColor: @white;

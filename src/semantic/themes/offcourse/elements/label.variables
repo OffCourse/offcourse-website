@@ -1,0 +1,30 @@
+/*******************************
+             Label
+*******************************/
+
+/*-------------------
+       Element
+--------------------*/
+
+@fontWeight: bold;
+@color: @black;
+@backgroundColor: @offWhite;
+
+/* Group */
+@groupVerticalMargin: 0.2em;
+@groupHorizontalMargin: 0.2em;
+
+/*-------------------
+        Parts
+--------------------*/
+
+/* Link */
+@linkOpacity: 1.0;
+
+/*-------------------
+        States
+--------------------*/
+
+/* Hover */
+@labelHoverBackgroundColor: @primaryColor;
+@labelHoverTextColor: @white;

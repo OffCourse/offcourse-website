@@ -1,0 +1,66 @@
+/*******************************
+        Global Overrides
+*******************************/
+
+@font-face  {
+    font-family: 'NittiGrotesk';
+    src:url('/fonts/NGN.woff') format('woff');
+}
+
+@font-face  {
+    font-family: 'NittiNormal';
+    src:url('/fonts/NN.woff') format('woff');
+}
+
+@font-face  {
+    font-family: 'NittiBold';
+    src:url('/fonts/NB.woff') format('woff');
+}
+
+.main.menu {
+    border-radius: 0;
+    border: none;
+}
+
+#container {
+  min-height: 100vh;
+}
+
+.pushable {
+    height: 100vh;
+}
+
+.xblock {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.xblock-container {
+    padding: 10px;
+}
+
+@keyframes comeIn {
+    0% { transform: scale(.5); opacity: 0; }
+    75% { transform: scale(1.03); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+/* .xmasonry .xblock { */
+/*   animation: comeIn ease 0.5s; */
+/*   animation-iteration-count: 1; */
+/*   transition: all .3s ease; */
+/* } */
+
+#grid .card {
+  margin-bottom: 10px;
+}
+
+figure {
+    margin: 0;
+}
+
+pre {
+    white-space: pre-wrap;
+}

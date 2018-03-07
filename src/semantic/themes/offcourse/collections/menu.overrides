@@ -1,0 +1,19 @@
+.ui.menu:not(.vertical) .item:first-child.logo {
+  padding: 0;
+}
+
+.ui.menu:not(.vertical) .item:first-child.logo img {
+  width: 56%;
+}
+.ui.menu:not(.vertical) .item > .button {
+   padding-left: 0;
+   padding-right: 0;
+}
+
+.logo > img {
+  background-color: @textColor;
+}
+
+.logo:hover > img {
+    cursor: grab;
+}
