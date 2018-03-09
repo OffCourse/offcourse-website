@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { CourseCard, CourseProvider, SignInForm, SignUpForm } from 'offcourse-ui-components';
 import { Grid, Menu, Segment } from 'semantic-ui-react';
+import Helmet from 'react-helmet';
 
 import CallToAction from '../components/CallToAction';
 import Hero from '../components/Hero';
@@ -34,6 +35,12 @@ class IndexPage extends Component {
 
     return (
       <div>
+        <Helmet
+          title="Join | Offcourse"
+          meta={[
+            { name: 'description', content: 'Offcourse sample description' },
+          ]}
+        />
         <Hero
           backgroundImage={mountainImg}
         >
