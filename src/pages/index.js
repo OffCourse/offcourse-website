@@ -2,9 +2,11 @@ import React, { Component } from 'react';
 import { CourseCard, CourseProvider, SignInForm, SignUpForm } from 'offcourse-ui-components';
 import { Grid, Menu, Segment } from 'semantic-ui-react';
 
+import CallToAction from '../components/CallToAction';
 import Hero from '../components/Hero';
 import Icon from '../components/Icon';
 import PostCard from '../components/PostCard';
+import NewsletterSignUp from '../components/NewsletterSignUp';
 import Section from '../components/Section';
 
 import mountainImg from '../assets/img/mountain.jpg';
@@ -139,6 +141,13 @@ class IndexPage extends Component {
               })}
             </div>
           </div>
+        </Section>
+        <Section>
+          <CallToAction
+            action={<NewsletterSignUp />}
+            title="Join offcourse and we promise this and that"
+
+          />
         </Section>
       </div>
     );
