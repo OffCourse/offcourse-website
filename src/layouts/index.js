@@ -2,6 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { isFunction } from 'lodash';
+
+import 'react-tippy/dist/tippy.css';
 import 'semantic-ui-less/semantic.less';
 
 import Footer from '../components/Footer';

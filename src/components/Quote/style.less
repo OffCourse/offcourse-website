@@ -1,0 +1,18 @@
+@import '../../semantic/themes/offcourse/globals/site.variables';
+
+.Quote {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 1rem;
+
+  &::after {
+    background: @positiveColor;
+    content: " ";
+    height: 4px;
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    width: 25%;
+  }
+}

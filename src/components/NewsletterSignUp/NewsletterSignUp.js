@@ -14,7 +14,7 @@ class NewsletterSignUp extends Component {
   }
 
   handleInputChange(ev) {
-    const { name, value } = ev;
+    const { name, value } = ev.target;
 
     this.setState({ [name]: value });
   }
@@ -23,6 +23,8 @@ class NewsletterSignUp extends Component {
     const { email } = this.state;
 
     alert(`We need to submit ${email} to mailing list`);
+
+    this.setState({ email: '' });
   }
 
   render() {
