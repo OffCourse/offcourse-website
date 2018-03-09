@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, BasicButton, Menubar } from 'offcourse-ui-components';
+import { navigateTo } from 'gatsby-link';
 
 import ScrollWatch from '../ScrollWatch';
 
@@ -11,12 +12,37 @@ const Header = () => {
         return (
           <div className={`Header ${y > 0 ? 'scrolled' : ''}`}>
             <Menubar>
-              <BasicButton>HOME</BasicButton>
-              <BasicButton>JOIN</BasicButton>
-              <BasicButton>COLLABORATE</BasicButton>
-              <BasicButton>DONATE</BasicButton>
-              <BasicButton>SIGN IN</BasicButton>
-              <Button positive>SIGN UP</Button>
+              <BasicButton
+                onClick={() => { navigateTo('/'); }}
+              >
+                HOME
+              </BasicButton>
+              <BasicButton
+                onClick={() => { navigateTo('/join'); }}
+              >
+                JOIN
+              </BasicButton>
+              <BasicButton
+                onClick={() => { navigateTo('/collaborate'); }}
+              >
+                COLLABORATE
+              </BasicButton>
+              <BasicButton
+                onClick={() => { navigateTo('/donate'); }}
+              >
+                DONATE
+              </BasicButton>
+              <BasicButton
+                onClick={() => { navigateTo('/sign-in'); }}
+              >
+                SIGN IN
+              </BasicButton>
+              <Button
+                onClick={() => { navigateTo('/sign-up'); }}
+                positive
+              >
+                SIGN UP
+              </Button>
             </Menubar>
           </div>
         );
