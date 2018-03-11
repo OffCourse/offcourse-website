@@ -21,12 +21,15 @@
     "react": "16.2",
     "react-dom": "16.2",
     "react-helmet": "^5.2.0",
+    "react-tippy": "^1.2.2",
     "semantic-ui-less": "^2.2.14",
     "semantic-ui-react": "^0.78.3"
   },
-  "keywords": [
-    "gatsby"
-  ],
+  "keywords": ["gatsby"],
+  "engines": {
+    "node": ">=8.10.0 <9.0.0"
+  },
+
   "license": "MIT",
   "main": "n/a",
   "scripts": {
@@ -42,6 +45,7 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.6.1",
+    "gatsby-plugin-sharp": "^1.6.41",
     "prettier": "^1.10.2"
   }
 }
