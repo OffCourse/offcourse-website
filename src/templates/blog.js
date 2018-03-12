@@ -43,7 +43,7 @@ const BlogTemplate = (props) => {
           </div>
         </div>
       </Section>
-      <Section>
+      <Section backgroundColor="offwhite">
         <CallToAction
           action={<NewsletterSignUp />}
           title="Sign up for the newsletter to get all of our updates directly in your mailbox"
