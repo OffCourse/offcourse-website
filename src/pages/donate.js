@@ -18,7 +18,7 @@ const Donate = () => {
       <Section>
         <div className="ui middle aligned grid container">
           <div className="centered row">
-            <div className="ten wide column">
+            <div className="sixteen wide tablet ten wide computer column">
               <Quote
                 text="We are on a mission to make learning easily accessible. Today’s young professionals have an abundance of information and knowledge available online. They are prone to lifelong learning, but have difficulty knowing where to start and how to progress in acquiring a new skill, especially when they’re new to a topic."
               />

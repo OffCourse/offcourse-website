@@ -21,7 +21,7 @@ const Blog = (props) => {
       <Section
         backgroundColor="offwhite"
       >
-        <div className="ui grid container">
+        <div className="ui stackable grid container">
           <div className="two column row">
             {posts.map(({ node: post }) => {
               const { excerpt, frontmatter } = post;

@@ -18,7 +18,7 @@ const Avatars = () => {
             if (index > 15) return false;
 
             return (
-              <div className="two wide column">
+              <div className="four wide tablet two wide computer column">
                 <a className="Avatars__item" href={`https://offcourse.io/curator/${avatar.name}`}>
                   <Tooltip
                     arrow

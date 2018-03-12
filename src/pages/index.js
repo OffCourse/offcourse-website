@@ -77,7 +77,7 @@ class IndexPage extends Component {
           title="Most viewed courses"
           subtitle="The most viewd courses on the platform this month"
         >
-          <div className="ui grid container">
+          <div className="ui stackable grid container">
             <div className="four column row">
               {courseGoals.map((goal) => {
                 return (
@@ -104,7 +104,7 @@ class IndexPage extends Component {
           </div>
         </Section>
         <Section backgroundColor="white">
-          <div className="ui grid container">
+          <div className="ui stackable grid container">
             <div className="three column row">
               <div className="column">
                 <Icon name="fab fa-searchengin" size="huge" />
@@ -129,7 +129,7 @@ class IndexPage extends Component {
           title="Blog"
           subtitle="Updates from and about the platform"
         >
-          <div className="ui grid container">
+          <div className="ui stackable grid container">
             <div className="two column row">
               {posts.map(({ node: post }) => {
                 const { excerpt, frontmatter } = post;

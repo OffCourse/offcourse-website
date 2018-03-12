@@ -18,12 +18,12 @@ const CallToAction = (props) => {
     <div className="CallToAction">
       <div className="ui grid container">
         <div className="ui centered row">
-          <div className="ten wide center aligned column">
+          <div className="sixteen wide tablet ten wide computer center aligned column">
             <h3>{title}</h3>
           </div>
         </div>
         <div className="ui centered row">
-          <div className="ten wide center aligned column">
+          <div className="sixteen wide tablet ten wide computer center aligned column">
             {action}
           </div>
         </div>

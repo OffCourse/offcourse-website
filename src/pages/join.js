@@ -17,7 +17,7 @@ const JoinPage = () => {
         subtitle="Why you should join us"
       />
       <Section>
-        <div className="ui middle aligned grid container">
+        <div className="ui middle aligned <stackable></stackable> grid container">
           <div className="row">
             <div className="eight wide column">
               <Quote
@@ -39,7 +39,7 @@ const JoinPage = () => {
       >
         <div className="ui middle aligned grid container">
           <div className="centered row">
-            <div className="ten wide column">
+            <div className="sixteen wide tablet ten wide computer column">
               <p>Together we share skills, develop them and acquire new ones. We want you to be able to acquire as well as to share your skill set that helps you grow as a new professional. To assemble these according to your own style and preferences, in a community of like-minded people, which is an alternative way of learning.</p>
               <p>We support you as new professional in your journey in UI/UX, design or programming - the technology skills of the future. And that future is our own, we are the future workforce. That is why open collaboration is the basis of our community. Join us if you believe in this approach to the idea of learning and share what you know.</p>
             </div>

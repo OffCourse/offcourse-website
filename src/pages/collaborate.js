@@ -45,7 +45,7 @@ const Collaborate = (props) => {
               const image = data[partner];
 
               return (
-                <div className="two wide column">
+                <div className="four wide tablet two wide computer column">
                   <Img
                     sizes={image.sizes}
                   />

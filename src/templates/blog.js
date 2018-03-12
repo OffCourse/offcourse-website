@@ -24,7 +24,7 @@ const BlogTemplate = (props) => {
       >
         <div className="ui grid container">
           <div className="centered row">
-            <div className="ten wide column">
+            <div className="sixteen wide tablet ten wide computer column">
               <h1>{frontmatter.title}</h1>
               <p>{frontmatter.date}</p>
             </div>
@@ -34,7 +34,7 @@ const BlogTemplate = (props) => {
       <Section>
         <div className="ui grid container">
           <div className="centered row">
-            <div className="ten wide column">
+            <div className="sixteen wide tablet ten wide computer column">
               <div
                 className="blog-post-content"
                 dangerouslySetInnerHTML={{ __html: html }}
