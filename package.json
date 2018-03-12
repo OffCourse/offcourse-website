@@ -26,6 +26,9 @@
     "semantic-ui-less": "^2.2.14",
     "semantic-ui-react": "^0.78.3"
   },
+  "engines": {
+    "node": ">=8.10.0 <9.0.0"
+  },
   "keywords": [
     "gatsby"
   ],
