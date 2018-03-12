@@ -1,5 +1,5 @@
 ---
-slug: "/blog/think-twice"
+path: "/blog/think-twice"
 date: "2018-03-09"
 title: "Think twice"
 featuredImage: "../assets/img/meetup.jpg"

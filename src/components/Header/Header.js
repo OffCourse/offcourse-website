@@ -33,6 +33,11 @@ const Header = () => {
                 DONATE
               </BasicButton>
               <BasicButton
+                onClick={() => { navigateTo('/blog'); }}
+              >
+                BLOG
+              </BasicButton>
+              <BasicButton
                 onClick={() => { navigateTo('/sign-in'); }}
               >
                 SIGN IN

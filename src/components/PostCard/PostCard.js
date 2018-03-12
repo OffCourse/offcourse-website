@@ -9,7 +9,7 @@ import './style.less';
 const propTypes = {
   excerpt: PropTypes.string.isRequired,
   featuredImage: PropTypes.object.isRequired,
-  slug: PropTypes.string.isRequired,
+  path: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
 };
 
@@ -18,7 +18,7 @@ const defaultProps = {
 };
 
 const PostCard = (props) => {
-  const { excerpt, featuredImage, slug, title } = props;
+  const { excerpt, featuredImage, path, title } = props;
 
   return (
     <div className="PostCard">
@@ -27,13 +27,13 @@ const PostCard = (props) => {
       </div>
 
       <div className="PostCard__body">
-        <Link to={slug}>
+        <Link to={path}>
           <h3>{title}</h3>
           <p>{excerpt}</p>
         </Link>
         <Button
           positive
-          onClick={() => { navigateTo(slug); }}
+          onClick={() => { navigateTo(path); }}
         >
           READ MORE
         </Button>

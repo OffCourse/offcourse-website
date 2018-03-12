@@ -133,14 +133,14 @@ class IndexPage extends Component {
             <div className="two column row">
               {posts.map(({ node: post }) => {
                 const { excerpt, frontmatter } = post;
-                const { featuredImage, slug, title } = frontmatter;
+                const { featuredImage, path, title } = frontmatter;
 
                 return (
                   <div className="column">
                     <PostCard
                       excerpt={excerpt}
                       featuredImage={featuredImage}
-                      slug={slug}
+                      path={path}
                       title={title}
                     />
                   </div>
@@ -175,7 +175,7 @@ export const pageQuery = graphql`
           excerpt(pruneLength: 250)
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
-            slug
+            path
             title
             featuredImage {
               childImageSharp {
