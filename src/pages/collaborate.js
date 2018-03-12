@@ -60,11 +60,7 @@ const Collaborate = (props) => {
       <Section backgroundColor="offwhite">
         <CallToAction
           action={(
-            <div className="ui centered row">
-              <div className="ten wide column">
-                <ContactForm />
-              </div>
-            </div>
+            <ContactForm />
           )}
           title="Contact us if you want to get in contact with us"
 
