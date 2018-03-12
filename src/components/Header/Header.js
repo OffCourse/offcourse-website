@@ -11,7 +11,7 @@ const Header = () => {
     <ScrollWatch render={(x, y) => {
         return (
           <div className={`Header ${y > 0 ? 'scrolled' : ''}`}>
-            <Menubar>
+            <Menubar onLogoClick={() => { navigateTo('/'); }}>
               <BasicButton
                 onClick={() => { navigateTo('/'); }}
               >
