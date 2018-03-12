@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Offcourse Marketing website',
   },
+  pathPrefix: '/offcourse-website',
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-less',
