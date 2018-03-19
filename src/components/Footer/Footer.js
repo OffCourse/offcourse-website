@@ -66,21 +66,23 @@ const Footer = () => {
         <Logo />
       </div>
 
-      <div className="ui grid container">
-        <div className="three column row">
-          <div className="left floated column">
-            <p>
-              Offcourse<br />
-              Schiedamsevest 154<br />
-              3011 BH Rotterdam
-            </p>
+      <div className="computer reversed ui grid container">
+        <div className="sixteen wide mobile eight wide computer right floated column">
+          <div className="ui two column grid">
+            <div className="column">
+              {renderMenu()}
+            </div>
+            <div className="column">
+              {renderSocial()}
+            </div>
           </div>
-          <div className="right floated column">
-            {renderMenu()}
-          </div>
-          <div className="right floated column">
-            {renderSocial()}
-          </div>
+        </div>
+        <div className="sixteen wide mobile four wide computer left floated column">
+          <p>
+            Offcourse<br />
+            Schiedamsevest 154<br />
+            3011 BH Rotterdam
+          </p>
         </div>
       </div>
     </div>

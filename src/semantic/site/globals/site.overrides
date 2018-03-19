@@ -16,3 +16,17 @@
   font-family: 'NittiBold';
   src:url('../../../assets/fonts/NB.woff') format('woff');
 }
+
+/*******************************
+        Visibility Classes
+*******************************/
+
+.show-for-computer {
+  display: none;
+}
+
+@media only screen and (min-width: @computerBreakpoint) {
+  .show-for-computer {
+    display: block !important;
+  }
+}

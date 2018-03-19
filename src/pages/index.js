@@ -44,33 +44,35 @@ class IndexPage extends Component {
         <Hero
           backgroundImage={mountainImg}
         >
-          <Grid container verticalAlign="middle">
-            <Grid.Column largeScreen="8" mobile="sixteen" floated="left">
-              <h1>Share what you know.<br/>Show who you are.</h1>
-              <p>Offcourse is an open source platform for crowdsourced learning. From blogs to podcasts, you can create hand-curated collections to the web's best learning resources, save them in one place, and share them with millions of people around the globe.</p>
-            </Grid.Column>
-            <Grid.Column largeScreen="six" mobile="sixteen" floated="right">
-              <Menu pointing secondary>
-                <Menu.Item
-                  name="Sign Up"
-                  active={activeMenuItem === 'signUp'}
-                  onClick={() => { this.setState({ activeMenuItem: 'signUp' }); }}
-                />
+          <div className="ui grid container">
+            <div className="middle aligned row">
+              <div className="sixteen wide mobile eight wide tablet eight wide computer left floated column">
+                <h1>Share what you know. <br className="show-for-computer" />Show who you are.</h1>
+                <p>Offcourse is an open source platform for crowdsourced learning. From blogs to podcasts, you can create hand-curated collections to the web's best learning resources, save them in one place, and share them with millions of people around the globe.</p>
+              </div>
+              <div className="sixteen wide mobile eight wide tablet six wide computer right floated column">
+                <Menu pointing secondary>
+                  <Menu.Item
+                    name="Sign Up"
+                    active={activeMenuItem === 'signUp'}
+                    onClick={() => { this.setState({ activeMenuItem: 'signUp' }); }}
+                  />
 
-                <Menu.Item
-                  name="Sign In"
-                  active={activeMenuItem === 'signIn'}
-                  onClick={() => { this.setState({ activeMenuItem: 'signIn' }); }}
-                />
+                  <Menu.Item
+                    name="Sign In"
+                    active={activeMenuItem === 'signIn'}
+                    onClick={() => { this.setState({ activeMenuItem: 'signIn' }); }}
+                  />
 
-              </Menu>
+                </Menu>
 
-              <Segment>
-                {activeMenuItem === 'signUp' && <SignUpForm />}
-                {activeMenuItem === 'signIn' && <SignInForm />}
-              </Segment>
-            </Grid.Column>
-          </Grid>
+                <Segment>
+                  {activeMenuItem === 'signUp' && <SignUpForm />}
+                  {activeMenuItem === 'signIn' && <SignInForm />}
+                </Segment>
+              </div>
+            </div>
+          </div>
         </Hero>
         <Section
           backgroundColor="offwhite"
@@ -78,12 +80,12 @@ class IndexPage extends Component {
           subtitle="The most viewd courses on the platform this month"
         >
           <div className="ui stackable grid container">
-            <div className="four column row">
+            <div className="row">
               {courseGoals.map((goal) => {
                 return (
                   <div
                     key={goal}
-                    className="column"
+                    className="sixteen wide mobile eight wide tablet four wide computer column"
                     style={{
                       // Make font sizes in CourseCard smaller to match app's sizes
                       fontSize: '0.7em',
@@ -92,7 +94,7 @@ class IndexPage extends Component {
                     <CourseProvider courseQuery={{ curator: 'offcourse', goal }}>
                       {(course) => {
                         return (
-                          <CourseCard course={course} hiddenFields={{}} />
+                          <CourseCard centered course={course} hiddenFields={{}} />
                         );
                       }}
                     </CourseProvider>
