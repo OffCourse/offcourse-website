@@ -1,0 +1,53 @@
+@import '../../semantic/themes/offcourse/globals/site.variables';
+
+.Carousel__nav {
+  margin-bottom: 2rem;
+  padding: 0 6rem;
+}
+
+@media only screen and (max-width: @computerBreakpoint) {
+  .Carousel__nav {
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+  }
+}
+
+.Carousel__nav-item {
+  text-align: center;
+  width: 33.333333%;
+  display: inline-block;
+  border-top: 4px solid @grey;
+  color: @grey;
+
+  &.active {
+    border-top: 4px solid @positiveColor;
+    color: @black;
+  }
+}
+
+.Carousel__item {
+  position: relative;
+  text-align: justify;
+}
+
+@triangleSize: 20px;
+
+.Carousel__item-prev, .Carousel__item-next {
+  position: absolute;
+  top: calc(50% - @triangleSize);
+
+  width: 0;
+  height: 0;
+  border-top: @triangleSize solid transparent;
+  border-bottom: @triangleSize solid transparent;
+}
+
+.Carousel__item-prev {
+  left: calc((@triangleSize + 32px) / -1);
+  border-right: @triangleSize solid @positiveColor;
+}
+
+.Carousel__item-next {
+  right: calc((@triangleSize + 32px) / -1);
+  border-left: @triangleSize solid @positiveColor;
+}
