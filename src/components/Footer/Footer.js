@@ -11,21 +11,21 @@ const Footer = () => {
         <strong>Menu</strong>
         <div className="ui list">
           <div className="item">
-            <Link to="join">Join</Link>
+            <Link to="/join">Join</Link>
           </div>
           <div className="item">
-            <Link to="collaborate">Collaborate</Link>
+            <Link to="/collaborate">Collaborate</Link>
           </div>
           <div className="item">
-            <Link to="donate">Donate</Link>
+            <Link to="/donate">Donate</Link>
           </div>
           <div className="item">
-            <Link to="sign-in">Sign in</Link>
+            <Link to="/sign-in">Sign in</Link>
           </div>
           <div className="item">
             <Button
               positive
-              onClick={() => { navigateTo('sign-up'); }}
+              onClick={() => { navigateTo('/sign-up'); }}
             >
               SIGN UP
             </Button>
