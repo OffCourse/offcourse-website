@@ -5,11 +5,12 @@ import CallToAction from '../components/CallToAction';
 import Hero from '../components/Hero';
 import NewsletterSignUp from '../components/NewsletterSignUp';
 import Section from '../components/Section';
+import Share from '../components/Share';
 
 const BlogTemplate = (props) => {
   const { data } = props;
   const { markdownRemark } = data;
-  const { frontmatter, html } = markdownRemark;
+  const { excerpt, frontmatter, html } = markdownRemark;
 
   return (
     <div>
@@ -39,6 +40,13 @@ const BlogTemplate = (props) => {
                 className="blog-post-content"
                 dangerouslySetInnerHTML={{ __html: html }}
               />
+              <br />
+              <hr />
+              <Share
+                text={excerpt}
+                title={frontmatter.title}
+                url={frontmatter.path}
+              />
             </div>
           </div>
         </div>
@@ -60,6 +68,7 @@ export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
+      excerpt(pruneLength: 250)
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         path
