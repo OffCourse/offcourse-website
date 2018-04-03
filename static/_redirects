@@ -1,0 +1,5 @@
+/curator/*  https://app.offcourse.io/curator/:splat  301
+/flags/*  https://app.offcourse.io/flags/:splat  301
+/users/*  https://app.offcourse.io/users/:splat  301
+/sign-in  https://app.offcourse.io/sign-in  301
+/sign-up  https://app.offcourse.io/sign-up  301
