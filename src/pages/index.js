@@ -51,7 +51,8 @@ class IndexPage extends Component {
                 <h1>Share what you know. <br className="show-for-computer" />Show who you are.</h1>
                 <p>Offcourse is an open source platform for crowdsourced learning and knowledge sharing. We call it <strong>crowdlearning</strong> for short. Anything you find on the web can become part of your personal learning course: blogs, video tutorials, podcasts, you name it. Create collections of learning resources, store them in one place, and share them with like-minded people around the globe.</p>
               </div>
-              <div className="sixteen wide mobile eight wide tablet six wide computer right floated column">
+
+              {/* <div className="sixteen wide mobile eight wide tablet six wide computer right floated column">
                 <Menu pointing secondary>
                   <Menu.Item
                     name="Sign Up"
@@ -71,7 +72,8 @@ class IndexPage extends Component {
                   {activeMenuItem === 'signUp' && <SignUpForm />}
                   {activeMenuItem === 'signIn' && <SignInForm />}
                 </Segment>
-              </div>
+
+              </div>*/}
             </div>
           </div>
         </Hero>
