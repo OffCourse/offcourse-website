@@ -53,7 +53,7 @@ const Collaborate = (props) => {
               const image = data[partner];
 
               return (
-                <div className="four wide tablet two wide computer column">
+                <div className="four wide tablet column">
                   <Img
                     sizes={image.sizes}
                   />
@@ -83,42 +83,42 @@ export default Collaborate;
 export const query = graphql`
   query CollaborateImageQuery {
     codeRotterdam: imageSharp(id: { regex: "/../assets/img/logos/code_rotterdam.png/" }) {
-      sizes(maxWidth: 300) {
+      sizes(maxWidth: 600) {
         ...GatsbyImageSharpSizes
       }
     }
     jinc: imageSharp(id: { regex: "/../assets/img/logos/jinc.png/" }) {
-      sizes(maxWidth: 300) {
+      sizes(maxWidth: 600) {
         ...GatsbyImageSharpSizes
       }
     }
     microsoft: imageSharp(id: { regex: "/../assets/img/logos/microsoft.png/" }) {
-      sizes(maxWidth: 300) {
+      sizes(maxWidth: 600) {
         ...GatsbyImageSharpSizes
       }
     }
     newDutchSchool: imageSharp(id: { regex: "/../assets/img/logos/new_dutch_school.png/" }) {
-      sizes(maxWidth: 300) {
+      sizes(maxWidth: 600) {
         ...GatsbyImageSharpSizes
       }
     }
     rawdata: imageSharp(id: { regex: "/../assets/img/logos/rawdata.png/" }) {
-      sizes(maxWidth: 300) {
+      sizes(maxWidth: 600) {
         ...GatsbyImageSharpSizes
       }
     }
     rotterdamPartners: imageSharp(id: { regex: "/../assets/img/logos/rotterdam_partners.png/" }) {
-      sizes(maxWidth: 300) {
+      sizes(maxWidth: 600) {
         ...GatsbyImageSharpSizes
       }
     }
     waag: imageSharp(id: { regex: "/../assets/img/logos/waag.png/" }) {
-      sizes(maxWidth: 300) {
+      sizes(maxWidth: 600) {
         ...GatsbyImageSharpSizes
       }
     }
     wetech: imageSharp(id: { regex: "/../assets/img/logos/wetech.png/" }) {
-      sizes(maxWidth: 300) {
+      sizes(maxWidth: 600) {
         ...GatsbyImageSharpSizes
       }
     }
