@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import { CourseCard, CourseProvider, SignInForm, SignUpForm } from 'offcourse-ui-components';
-import { Grid, Menu, Segment } from 'semantic-ui-react';
+import { Button, CourseCard, CourseProvider, SignInForm, SignUpForm } from 'offcourse-ui-components';
 import Helmet from 'react-helmet';
+import { navigateTo } from 'gatsby-link';
 
 import CallToAction from '../components/CallToAction';
 import Carousel from '../components/Carousel';
 import Hero from '../components/Hero';
 import Quote from '../components/Quote';
 import PostCard from '../components/PostCard';
-import NewsletterSignUp from '../components/NewsletterSignUp';
 import Section from '../components/Section';
 
 import mountainImg from '../assets/img/mountain.jpg';
@@ -51,6 +50,7 @@ class IndexPage extends Component {
               <div className="sixteen wide mobile eight wide tablet eight wide computer left floated column">
                 <h1>Share what you know. <br className="show-for-computer" />Show who you are.</h1>
                 <p>Offcourse is an open source platform for crowdsourced learning and knowledge sharing. We call it <strong>crowdlearning</strong> for short. Anything you find on the web can become part of your personal learning course: blogs, video tutorials, podcasts, you name it. Create collections of learning resources, store them in one place, and share them with like-minded people around the globe.</p>
+                <Button positive onClick={() => { navigateTo('/sign-in'); }}>GO TO PLATFORM</Button>
               </div>
 
               {/* <div className="sixteen wide mobile eight wide tablet six wide computer right floated column">
@@ -168,9 +168,8 @@ class IndexPage extends Component {
         </Section>
         <Section>
           <CallToAction
-            action={<NewsletterSignUp />}
-            title="Join offcourse and we promise this and that"
-
+            action={<Button positive onClick={() => { navigateTo('/sign-up'); }}>JOIN NOW</Button>}
+            title="Join offcourse"
           />
         </Section>
       </div>

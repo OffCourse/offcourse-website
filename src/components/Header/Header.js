@@ -45,7 +45,7 @@ const Header = () => {
               <BasicButton
                 onClick={() => { navigateTo('/sign-in'); }}
               >
-                SIGN IN
+                GO TO PLATFORM
               </BasicButton>
               <Button
                 onClick={() => { navigateTo('/sign-up'); }}
