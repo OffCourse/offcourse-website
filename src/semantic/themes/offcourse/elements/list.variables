@@ -22,3 +22,10 @@
 @selectionListActiveColor: @white;
 @selectionListHoverBackground: @primaryColor;
 @selectionListHoverColor: @white;
+
+/*-------------------
+      Variations
+--------------------*/
+
+/* Selection List States */
+@selectionListColor: @black;
