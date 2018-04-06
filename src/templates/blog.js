@@ -17,7 +17,7 @@ const BlogTemplate = (props) => {
       <Helmet
         title={`${frontmatter.title} | Offcourse`}
         meta={[
-          { name: 'description', content: 'Offcourse sample description' },
+          { name: 'description', content: 'Offcourse is an open source platform for crowdsourced learning and knowledge sharing.' },
         ]}
       />
       <Hero

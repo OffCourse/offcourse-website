@@ -23,6 +23,11 @@ const Header = () => {
                 JOIN
               </BasicButton>
               <BasicButton
+                onClick={() => { navigateTo('/build'); }}
+              >
+                BUILD
+              </BasicButton>
+              <BasicButton
                 onClick={() => { navigateTo('/collaborate'); }}
               >
                 COLLABORATE

@@ -36,7 +36,7 @@ class ContactForm extends Component {
 
     return (
       <form className="ui form" onSubmit={this.handleSubmit}>
-        <div className="field">
+        <div className="field text-left">
           <label htmlFor="name">Name</label>
           <input
             name="name"
@@ -46,7 +46,7 @@ class ContactForm extends Component {
             value={name}
           />
         </div>
-        <div className="field">
+        <div className="field text-left">
           <label htmlFor="email">Name</label>
           <input
             name="email"
@@ -56,7 +56,7 @@ class ContactForm extends Component {
             value={email}
           />
         </div>
-        <div className="field">
+        <div className="field text-left">
           <label htmlFor="message">Message</label>
           <textarea
             name="message"
@@ -66,7 +66,9 @@ class ContactForm extends Component {
           />
         </div>
 
-        <Button type="submit">Submit message</Button>
+        <div className="text-left">
+          <Button type="submit">Submit message</Button>
+        </div>
       </form>
     );
   }

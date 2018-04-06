@@ -37,9 +37,9 @@ class IndexPage extends Component {
     return (
       <div>
         <Helmet
-          title="Join | Offcourse"
+          title="Offcourse"
           meta={[
-            { name: 'description', content: 'Offcourse sample description' },
+            { name: 'description', content: 'Offcourse is an open source platform for crowdsourced learning and knowledge sharing.' },
           ]}
         />
         <Hero
@@ -49,7 +49,7 @@ class IndexPage extends Component {
             <div className="middle aligned row">
               <div className="sixteen wide mobile eight wide tablet eight wide computer left floated column">
                 <h1>Share what you know. <br className="show-for-computer" />Show who you are.</h1>
-                <p>Offcourse is an open source platform for crowdsourced learning. From blogs to podcasts, you can create hand-curated collections to the web's best learning resources, save them in one place, and share them with millions of people around the globe.</p>
+                <p>Offcourse is an open source platform for crowdsourced learning and knowledge sharing. We call it <strong>crowdlearning</strong> for short. Anything you find on the web can become part of your personal learning course: blogs, video tutorials, podcasts, you name it. Create collections of learning resources, store them in one place, and share them with like-minded people around the globe.</p>
               </div>
               <div className="sixteen wide mobile eight wide tablet six wide computer right floated column">
                 <Menu pointing secondary>
@@ -113,19 +113,19 @@ class IndexPage extends Component {
                 id: 'slide-1',
                 icon: 'fab fa-searchengin',
                 title: '1. Pick',
-                text: 'Creating a collection on Offcourse is simple. Instead of spending hours making content yourself, you pick the best online resources on a topic you love. Write a task for each link you collect, and put everything together on a card. Add a title and a short description, and there you are – you made a collection that you can share.',
+                text: 'Pick links to the best online resources. Make use of knowledge that is already out there as opposed to starting from scratch.',
               },
               {
                 id: 'slide-2',
                 icon: 'fas fa-wrench',
                 title: '2. Tweak',
-                text: 'You want to learn from the best. That’s why on Offcourse.io, you can tweak collections that were made by others. Copy a collection that’s made by someone you admire, and edit the tasks or resources to make the collection suit your learning style and goals. And voilà – you’re contributing to building a network of the best learning resources on the web.',
+                text: 'Tweak course material to make it suit your style.',
               },
               {
                 id: 'slide-3',
                 icon: 'fas fa-bullhorn',
                 title: '3. Push',
-                text: 'Once you’re ready, share your collections on your social media channels with the push of a button. Or include the unique links to your collections in your blog or your website. There are so many channels on the web already – we give you the tools to use your own channels to build a name for yourself on the topics that you choose.',
+                text: 'Push your course content to the platform and externally. Share knowledge with the crowd.',
               },
             ]}
             render={(item) => {

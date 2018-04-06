@@ -1,6 +1,8 @@
 import React from 'react';
 import { Embed } from 'semantic-ui-react';
 import { Button } from 'offcourse-ui-components';
+import Helmet from 'react-helmet';
+import { navigateTo } from 'gatsby-link';
 
 import Avatars from '../components/Avatars';
 import CallToAction from '../components/CallToAction';
@@ -12,12 +14,40 @@ import Section from '../components/Section';
 const JoinPage = () => {
   return (
     <div>
+      <Helmet
+        title="Join | Offcourse"
+        meta={[
+          { name: 'description', content: 'Offcourse is an open source platform for crowdsourced learning and knowledge sharing.' },
+        ]}
+      />
       <PageHeader
         title="Join"
         subtitle="Why you should join us"
       />
       <Section>
-        <div className="ui middle aligned <stackable></stackable> grid container">
+        <div className="ui middle aligned grid container">
+          <div className="centered row">
+            <div className="sixteen wide tablet ten wide computer column">
+              <p>It's not where you're from, it's where you want to be. This is the principle of our open source learning platform. If we share what we know, and collect that knowledge in one place, we all learn from each other and we can grow our skills in the area we want. That is why we support open source and open knowledge.</p>
+              <p>Our aim is to help you grow as a professional. Offcourse focuses on 21st Century Skills, such as design, entrepreneurship and programming. We don't believe in 6 year curricula, long, boring lectures, and one-size-fits-all courses. Instead you assemble your skills bit by bit. When you're ready, share that newfound knowledge back with the Offcourse community.</p>
+            </div>
+          </div>
+        </div>
+      </Section>
+      <Section backgroundColor="offwhite">
+        <CallToAction
+          action={(
+            <div>
+              <Button positive onClick={() => { navigateTo('/sign-up'); }}>JOIN</Button>
+              <br /><br />
+              <p className="c-grey">or follow us on <a href="https://twitter.com/offcourse_">Twitter</a> and  <a href="https://www.linkedin.com/company/7962249/">LinkedIn</a> and show your appreciation with #offcourse and #crowdlearning.</p>
+            </div>
+          )}
+          title="Join offcourse now"
+        />
+      </Section>
+      <Section>
+        <div className="ui middle aligned stackable grid container">
           <div className="row">
             <div className="eight wide column">
               <Quote
@@ -35,34 +65,9 @@ const JoinPage = () => {
         </div>
       </Section>
       <Section
-        backgroundColor="offwhite"
-      >
-        <div className="ui middle aligned grid container">
-          <div className="centered row">
-            <div className="sixteen wide tablet ten wide computer column">
-              <p>Together we share skills, develop them and acquire new ones. We want you to be able to acquire as well as to share your skill set that helps you grow as a new professional. To assemble these according to your own style and preferences, in a community of like-minded people, which is an alternative way of learning.</p>
-              <p>We support you as new professional in your journey in UI/UX, design or programming - the technology skills of the future. And that future is our own, we are the future workforce. That is why open collaboration is the basis of our community. Join us if you believe in this approach to the idea of learning and share what you know.</p>
-            </div>
-          </div>
-        </div>
-      </Section>
-      <Section
-        title="We are a community of assemblers"
-        subtitle="Each with their own set of skills"
-      >
-
-        <Avatars />
-      </Section>
-
-      <Section>
-        <CallToAction
-          action={(
-            <Button positive>JOIN</Button>
-          )}
-          title="Join offcourse now for this and that reason"
-
-        />
-      </Section>
+        title="Our Band of Misfits"
+        subtitle="We are a group of people who share the same beliefs, not necessarily the same (educational) backgrounds or levels. What we have in common is that we are a band of misfits - we have a different view on education and learning from the traditional system."
+      />
     </div>
   );
 };

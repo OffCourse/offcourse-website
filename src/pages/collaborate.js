@@ -1,5 +1,6 @@
 import React from 'react';
 import Img from 'gatsby-image';
+import Helmet from 'react-helmet';
 
 import CallToAction from '../components/CallToAction';
 import ContactForm from '../components/ContactForm';
@@ -22,6 +23,12 @@ const Collaborate = (props) => {
 
   return (
     <div>
+      <Helmet
+        title="Collaborate | Offcourse"
+        meta={[
+          { name: 'description', content: 'Offcourse is an open source platform for crowdsourced learning and knowledge sharing.' },
+        ]}
+      />
       <PageHeader
         title="Collaborate"
         subtitle="Why you should collaborate with us"
@@ -30,7 +37,8 @@ const Collaborate = (props) => {
         <div className="ui middle aligned grid container">
           <div className="centered row">
             <div className="ten wide column">
-              <p>WIP</p>
+              <p>Offcourse's mission is to turn talents into professionals. Our platform helps learners of all shapes and sizes to improve their learning and to create a space for people to share knowledge. We are open to partnering with knowledge institutions of different kinds to make this mission work. Institutions who aim to have a societal impact in the area of knowledge sharing and/or learning are partners we are happy to work with.</p>
+              <p>In addition to partners to e.g. share knowledge or organise events with, we also partner with teams that are in need of tooling for which Offcourse is suitable. You can therefore also contact us for partnership opportunities if you are looking for a better tool for communication, learning, documentation, and knowledge sharing.</p>
             </div>
           </div>
         </div>
@@ -62,7 +70,7 @@ const Collaborate = (props) => {
           action={(
             <ContactForm />
           )}
-          title="Contact us if you want to get in contact with us"
+          title="Become a partner"
 
         />
       </Section>
@@ -94,12 +102,12 @@ export const query = graphql`
         ...GatsbyImageSharpSizes
       }
     }
-    rawdata: imageSharp(id: { regex: "/../assets/img/logos/rawdata.jpeg/" }) {
+    rawdata: imageSharp(id: { regex: "/../assets/img/logos/rawdata.png/" }) {
       sizes(maxWidth: 300) {
         ...GatsbyImageSharpSizes
       }
     }
-    rotterdamPartners: imageSharp(id: { regex: "/../assets/img/logos/rotterdam_partners.jpeg/" }) {
+    rotterdamPartners: imageSharp(id: { regex: "/../assets/img/logos/rotterdam_partners.png/" }) {
       sizes(maxWidth: 300) {
         ...GatsbyImageSharpSizes
       }

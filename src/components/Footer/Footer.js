@@ -14,6 +14,9 @@ const Footer = () => {
             <Link to="/join">Join</Link>
           </div>
           <div className="item">
+            <Link to="/build">Build</Link>
+          </div>
+          <div className="item">
             <Link to="/collaborate">Collaborate</Link>
           </div>
           <div className="item">

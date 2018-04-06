@@ -23,17 +23,23 @@ const Section = (props) => {
   const { backgroundColor, children, subtitle, title } = props;
 
   return (
-    <div className={`Section ${backgroundColor}`}>
+    <section className={`Section ${backgroundColor}`}>
 
       {(subtitle || title) &&
-        <div className="Section__header">
-          {title && <h2 className="Section__header-title">{title}</h2>}
-          {subtitle && <p>{subtitle}</p>}
+        <div className="ui grid container">
+          <div className="ui centered row">
+            <div className="sixteen wide tablet ten wide computer center aligned column">
+              <div className="Section__header">
+                {title && <h1 className="Section__header-title">{title}</h1>}
+                {subtitle && <p>{subtitle}</p>}
+              </div>
+            </div>
+          </div>
         </div>
       }
 
       {children}
-    </div>
+    </section>
   );
 };
 

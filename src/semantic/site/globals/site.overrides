@@ -30,3 +30,15 @@
     display: block !important;
   }
 }
+
+/*******************************
+        Utility Classes
+*******************************/
+
+.c-grey {
+  color: @grey;
+}
+
+.text-left {
+  text-align: left;
+}

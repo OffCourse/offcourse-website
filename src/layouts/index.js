@@ -25,7 +25,7 @@ const Layout = (props) => {
       <Helmet
         title="Offcourse"
         meta={[
-          { name: 'description', content: 'Offcourse sample description' },
+          { name: 'description', content: 'Offcourse is an open source platform for crowdsourced learning and knowledge sharing.' },
         ]}
         link={[
           { href: 'https://use.fontawesome.com/releases/v5.0.8/css/all.css', rel: 'stylesheet'},

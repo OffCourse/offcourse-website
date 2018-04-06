@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from 'offcourse-ui-components';
+import Helmet from 'react-helmet';
 
 import CallToAction from '../components/CallToAction';
 import NewsletterSignUp from '../components/NewsletterSignUp';
@@ -14,6 +15,12 @@ const Blog = (props) => {
 
   return (
     <div>
+      <Helmet
+        title="Blog | Offcourse"
+        meta={[
+          { name: 'description', content: 'Offcourse is an open source platform for crowdsourced learning and knowledge sharing.' },
+        ]}
+      />
       <PageHeader
         title="Blog"
         subtitle="Learn more about how we learn"
