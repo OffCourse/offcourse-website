@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import './style.less';
 
 const propTypes = {
+  backgroundColor: PropTypes.tring,
   backgroundImage: PropTypes.string,
   children: PropTypes.oneOfType([
     PropTypes.node,
@@ -12,15 +13,16 @@ const propTypes = {
 };
 
 const defaultProps = {
+  backgroundColor: undefined,
   backgroundImage: undefined,
 };
 
 const Hero = (props) => {
-  const { backgroundImage, children } = props;
+  const { backgroundColor, backgroundImage, children } = props;
 
   return (
-    <div className="Hero">
-      {backgroundImage &&
+    <div className={`Hero ${backgroundColor}`}>
+      {backgroundImage && !backgroundColor &&
         <div
           className="Hero__background-image"
           style={{

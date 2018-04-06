@@ -43,6 +43,7 @@ class IndexPage extends Component {
           ]}
         />
         <Hero
+          backgroundColor="primary"
           backgroundImage={mountainImg}
         >
           <div className="ui grid container">
