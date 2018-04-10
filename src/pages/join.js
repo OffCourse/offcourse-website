@@ -138,7 +138,7 @@ const JoinPage = (props) => {
 
         <div className="ui middle aligned grid container">
           <div className="centered row">
-            <div className="ten wide column">
+            <div className="ten wide center aligned column">
               <h2>Each with their own set of skills</h2>
             </div>
           </div>
