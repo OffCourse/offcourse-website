@@ -28,14 +28,14 @@ const Section = (props) => {
       {(subtitle || title) &&
         <div className="Section__header">
           {title &&
-            <div className="ui centered row">
+            <div className="ui centered grid">
               <div className="sixteen wide center aligned column">
                 <h1 className="Section__header-title">{title}</h1>
               </div>
             </div>
           }
           {subtitle &&
-            <div className="ui centered row">
+            <div className="ui centered grid">
               <div className="ten wide center aligned column">
                 <p>{subtitle}</p>
               </div>
