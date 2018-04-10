@@ -81,7 +81,7 @@ class IndexPage extends Component {
         <Section
           backgroundColor="offwhite"
           title="Most viewed courses"
-          subtitle="The most viewd courses on the platform this month"
+          subtitle="The most viewed courses on the platform this month"
         >
           <div className="ui stackable grid container">
             <div className="row">
