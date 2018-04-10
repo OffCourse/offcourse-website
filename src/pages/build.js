@@ -19,6 +19,7 @@ const Build = (props) => {
       />
       <PageHeader
         title="Build"
+        subtitle="How you can contribute to the platform"
       />
       <Section>
         <div className="ui middle aligned grid container">
