@@ -1,65 +1,102 @@
-import React from 'react';
-import { Button, BasicButton, Menubar } from 'offcourse-ui-components';
+import React, { Component} from 'react';
+import { Button, BasicButton, Logo } from 'offcourse-ui-components';
 import { navigateTo } from 'gatsby-link';
 
 import ScrollWatch from '../ScrollWatch';
 
 import './style.less';
 
-const Header = () => {
-  return (
-    <ScrollWatch render={(x, y) => {
-        return (
-          <div className={`Header ${y > 0 ? 'scrolled' : ''}`}>
-            <Menubar onLogoClick={() => { navigateTo('/'); }}>
-              <BasicButton
-                onClick={() => { navigateTo('/'); }}
-              >
-                HOME
-              </BasicButton>
-              <BasicButton
-                onClick={() => { navigateTo('/join'); }}
-              >
-                JOIN
-              </BasicButton>
-              <BasicButton
-                onClick={() => { navigateTo('/build'); }}
-              >
-                BUILD
-              </BasicButton>
-              <BasicButton
-                onClick={() => { navigateTo('/collaborate'); }}
-              >
-                COLLABORATE
-              </BasicButton>
-              <BasicButton
-                onClick={() => { navigateTo('/donate'); }}
-              >
-                DONATE
-              </BasicButton>
-              <BasicButton
-                onClick={() => { navigateTo('/blog'); }}
-              >
-                BLOG
-              </BasicButton>
-              <BasicButton
-                onClick={() => { navigateTo('/sign-in'); }}
-              >
-                GO TO PLATFORM
-              </BasicButton>
-              <Button
-                onClick={() => { navigateTo('/sign-up'); }}
-                positive
-              >
-                SIGN UP
-              </Button>
-            </Menubar>
-          </div>
-        );
-      }}
-    />
+class Header extends Component {
+  constructor(props) {
+    super(props);
 
-  );
+    this.state = {
+      menuOpen: false,
+    }
+  }
+
+  render() {
+    const { menuOpen } = this.state;
+
+    return (
+      <ScrollWatch render={(x, y) => {
+          return (
+            <div className={`Header ${y > 0 ? 'scrolled' : ''}`}>
+              <div className="Header__logo"><Logo /></div>
+
+              <button
+                className="Header__hamburger"
+                onClick={() => { this.setState({ menuOpen: !menuOpen }); }}
+              >
+                <i className="fas fa-bars" />
+              </button>
+
+              <ul className={`Header__menu ${menuOpen ? 'active' : ''}`}>
+                <li className="Header__menu-item">
+                  <BasicButton
+                    onClick={() => { navigateTo('/'); }}
+                  >
+                    Home
+                  </BasicButton>
+                </li>
+                <li className="Header__menu-item">
+                  <BasicButton
+                    onClick={() => { navigateTo('/join'); }}
+                  >
+                    Join
+                  </BasicButton>
+                </li>
+                <li className="Header__menu-item">
+                  <BasicButton
+                    onClick={() => { navigateTo('/build'); }}
+                  >
+                    Build
+                  </BasicButton>
+                </li>
+                <li className="Header__menu-item">
+                  <BasicButton
+                    onClick={() => { navigateTo('/collaborate'); }}
+                  >
+                    Collaborate
+                  </BasicButton>
+                </li>
+                <li className="Header__menu-item">
+                  <BasicButton
+                    onClick={() => { navigateTo('/donate'); }}
+                  >
+                    Donate
+                  </BasicButton>
+                </li>
+                <li className="Header__menu-item">
+                  <BasicButton
+                    onClick={() => { navigateTo('/blog'); }}
+                  >
+                    Blog
+                  </BasicButton>
+                </li>
+                <li className="Header__menu-item">
+                  <BasicButton
+                    onClick={() => { navigateTo('/sign-in'); }}
+                  >
+                    Go to platform
+                  </BasicButton>
+                </li>
+                <li className="Header__menu-item">
+                  <Button
+                    onClick={() => { navigateTo('/sign-up'); }}
+                    positive
+                  >
+                    Sign up
+                  </Button>
+                </li>
+              </ul>
+            </div>
+          );
+        }}
+      />
+
+    );
+  }
 };
 
 export default Header;
