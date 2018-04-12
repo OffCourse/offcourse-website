@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { Button, CourseCard, CourseProvider, SignInForm, SignUpForm } from 'offcourse-ui-components';
+import { Button, CourseCard, CourseProvider } from 'offcourse-ui-components';
 import Helmet from 'react-helmet';
 import { navigateTo } from 'gatsby-link';
 
+import AuthTabs from '../components/AuthTabs';
 import CallToAction from '../components/CallToAction';
 import Carousel from '../components/Carousel';
 import Hero from '../components/Hero';
@@ -53,27 +54,8 @@ class IndexPage extends Component {
                 <Button positive onClick={() => { navigateTo('/sign-in'); }}>GO TO PLATFORM</Button>
               </div>
 
-              {/* <div className="sixteen wide mobile eight wide tablet six wide computer right floated column">
-                <Menu pointing secondary>
-                  <Menu.Item
-                    name="Sign Up"
-                    active={activeMenuItem === 'signUp'}
-                    onClick={() => { this.setState({ activeMenuItem: 'signUp' }); }}
-                  />
-
-                  <Menu.Item
-                    name="Sign In"
-                    active={activeMenuItem === 'signIn'}
-                    onClick={() => { this.setState({ activeMenuItem: 'signIn' }); }}
-                  />
-
-                </Menu>
-
-                <Segment>
-                  {activeMenuItem === 'signUp' && <SignUpForm />}
-                  {activeMenuItem === 'signIn' && <SignInForm />}
-                </Segment>
-
+              {/*<div className="sixteen wide mobile eight wide tablet six wide computer right floated column">
+                <AuthTabs />
               </div>*/}
             </div>
           </div>
