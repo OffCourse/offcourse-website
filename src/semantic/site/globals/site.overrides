@@ -31,6 +31,12 @@
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .ui.card {
+    margin: 0 auto;
+  }
+}
+
 /*******************************
         Visibility Classes
 *******************************/
