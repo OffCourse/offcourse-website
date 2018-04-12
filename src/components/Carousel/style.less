@@ -28,6 +28,7 @@
 .Carousel__item {
   position: relative;
   text-align: justify;
+  max-width: 100%;
 }
 
 @triangleSize: 20px;
@@ -47,7 +48,19 @@
   border-right: @triangleSize solid @positiveColor;
 }
 
+@media only screen and (max-width: 767px) {
+  .Carousel__item-prev {
+    left: 0;
+  }
+}
+
 .Carousel__item-next {
   right: calc((@triangleSize + 32px) / -1);
   border-left: @triangleSize solid @positiveColor;
+}
+
+@media only screen and (max-width: 767px) {
+  .Carousel__item-next {
+    right: 0;
+  }
 }
