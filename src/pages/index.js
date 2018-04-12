@@ -135,7 +135,7 @@ class IndexPage extends Component {
                 const { featuredImage, path, title } = frontmatter;
 
                 return (
-                  <div className="column">
+                  <div key={path} className="column">
                     <PostCard
                       excerpt={excerpt}
                       featuredImage={featuredImage}

@@ -5,10 +5,7 @@ import './style.less';
 
 const propTypes = {
   items: PropTypes.arrayOf(PropTypes.object),
-  render: PropTypes.oneOfType([
-    PropTypes.node,
-    PropTypes.arrayOf(PropTypes.node),
-  ]),
+  render: PropTypes.func.isRequired,
 };
 
 class Carousel extends Component {
@@ -61,6 +58,7 @@ class Carousel extends Component {
 
                   return (
                     <a
+                      key={item.id}
                       className={`Carousel__nav-item ${active ? 'active' : ''}`}
                       onClick={() => { this.setState({ index: itemIndex }); }}
                     >

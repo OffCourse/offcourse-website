@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import './style.less';
 
 const propTypes = {
-  backgroundColor: PropTypes.tring,
+  backgroundColor: PropTypes.string,
   backgroundImage: PropTypes.string,
   children: PropTypes.oneOfType([
     PropTypes.node,
