@@ -25,7 +25,7 @@ const Build = (props) => {
         <div className="ui middle aligned grid container">
           <div className="centered row">
             <div className="ten wide column">
-              <p>You can help us build the Offcourse platform and its community further. If you support our view that learning should be accessible to people around the globe and that the way we learn can be optimised, and you support the principles of openness, ownership and collaboration, we invite you to contribute. Some examples of how you can, you are welcome to:</p>
+              <p>You can help us build the Offcourse platform and its community further. If you support our view that learning should be accessible to people around the globe and that the way we learn can be optimised, and you support the principles of openness, ownership and collaboration, we invite you to contribute. Here are some examples of how you can contribute:</p>
 
               <ul>
                 <li>contribute open source code (all developer levels)</li>

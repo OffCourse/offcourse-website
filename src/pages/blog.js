@@ -23,7 +23,7 @@ const Blog = (props) => {
       />
       <PageHeader
         title="Blog"
-        subtitle="Learn more about how we learn"
+        subtitle="Updates from and about the platform and our mission"
       />
       <Section
         backgroundColor="offwhite"

@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "author": "Joris de Ruiter <joris@stay-bold.com>",
   "dependencies": {
+    "email-validator": "^2.0.3",
     "gatsby": "^1.9.202",
     "gatsby-image": "^1.0.41",
     "gatsby-link": "^1.6.37",

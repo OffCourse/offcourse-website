@@ -50,7 +50,8 @@ class IndexPage extends Component {
             <div className="middle aligned row">
               <div className="sixteen wide mobile eight wide tablet eight wide computer left floated column">
                 <h1>Share what you know. <br className="show-for-computer" />Show who you are.</h1>
-                <p>Offcourse is an open source platform for crowdsourced learning and knowledge sharing. We call it <strong>crowdlearning</strong> for short. Anything you find on the web can become part of your personal learning course: blogs, video tutorials, podcasts, you name it. Create collections of learning resources, store them in one place, and share them with like-minded people around the globe.</p>
+                <p>Offcourse is an open source platform for crowdsourced learning and knowledge sharing. We call it <strong>crowdlearning</strong> for short.</p>
+                <p>Anything you find on the web can become part of your personal learning course: blogs, video tutorials, podcasts, you name it. Create collections of learning resources, store them in one place, and share them with like-minded people around the globe.</p>
                 <Button positive onClick={() => { navigateTo('/sign-in'); }}>GO TO PLATFORM</Button>
               </div>
 
@@ -126,7 +127,7 @@ class IndexPage extends Component {
         <Section
           backgroundColor="offwhite"
           title="Blog"
-          subtitle="Updates from and about the platform"
+          subtitle="Updates from and about the platform and our mission"
         >
           <div className="ui stackable grid container">
             <div className="two column row">
@@ -151,7 +152,7 @@ class IndexPage extends Component {
         <Section>
           <CallToAction
             action={<Button positive onClick={() => { navigateTo('/sign-up'); }}>JOIN NOW</Button>}
-            title="Join offcourse"
+            title="Join Offcourse"
           />
         </Section>
       </div>

@@ -31,14 +31,14 @@ const JoinPage = (props) => {
     {
       name: 'Sander Reukema',
       tagline: 'Reasoner',
-      skills: ['data science', 'finance'],
+      skills: ['data science', 'finance', 'strategy'],
       image: data.sander,
     },
 
     {
       name: 'Kelly Sinterniklaas',
       tagline: 'Ambassador of Buzz',
-      skills: ['marketing', 'communicatie', 'copywriting'],
+      skills: ['marketing', 'communication', 'copywriting'],
       image: data.kelly,
     },
 
@@ -59,7 +59,7 @@ const JoinPage = (props) => {
     {
       name: 'Loek Hendriks',
       tagline: 'Enthusiastic Engineer ',
-      skills: ['industrial engineering'],
+      skills: ['industrial design'],
       image: data.loek,
     },
 
@@ -101,18 +101,6 @@ const JoinPage = (props) => {
         </div>
       </Section>
       <Section backgroundColor="offwhite">
-        <CallToAction
-          action={(
-            <div>
-              <Button positive onClick={() => { navigateTo('/sign-up'); }}>JOIN</Button>
-              <br /><br />
-              <p className="c-grey">or follow us on <a href="https://twitter.com/offcourse_">Twitter</a> and  <a href="https://www.linkedin.com/company/7962249/">LinkedIn</a> and show your appreciation with #offcourse and #crowdlearning.</p>
-            </div>
-          )}
-          title="Join offcourse now"
-        />
-      </Section>
-      <Section>
         <div className="ui middle aligned stackable grid container">
           <div className="row">
             <div className="eight wide column">
@@ -130,20 +118,23 @@ const JoinPage = (props) => {
           </div>
         </div>
       </Section>
+      <Section>
+        <CallToAction
+          action={(
+            <div>
+              <Button positive onClick={() => { navigateTo('/sign-up'); }}>JOIN</Button>
+              <br /><br />
+              <p className="c-grey">or follow us on <a href="https://twitter.com/offcourse_">Twitter</a> and  <a href="https://www.linkedin.com/company/7962249/">LinkedIn</a> and show your appreciation with #offcourse and #crowdlearning.</p>
+            </div>
+          )}
+          title="Join offcourse now"
+        />
+      </Section>
       <Section
         backgroundColor="offwhite"
         title="Our Band of Misfits"
         subtitle="We are a group of people who share the same beliefs, not necessarily the same (educational) backgrounds or levels. What we have in common is that we are a band of misfits - we have a different view on education and learning from the traditional system."
       >
-
-        <div className="ui middle aligned grid container">
-          <div className="centered row">
-            <div className="ten wide center aligned column">
-              <h2>Each with their own set of skills</h2>
-            </div>
-          </div>
-        </div>
-
 
         <div className="ui stackable grid container">
           <div className="row">

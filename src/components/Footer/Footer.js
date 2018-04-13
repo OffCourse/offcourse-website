@@ -23,7 +23,7 @@ const Footer = () => {
             <Link to="/donate">Donate</Link>
           </div>
           <div className="item">
-            <Link to="/sign-in">Sign in</Link>
+            <Link to="/sign-in">Go to platform</Link>
           </div>
           <div className="item">
             <Button

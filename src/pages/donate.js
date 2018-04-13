@@ -20,7 +20,7 @@ const Donate = () => {
       />
       <PageHeader
         title="Donate"
-        subtitle="We want you to donate please please please"
+        subtitle="Another way to contribute"
       />
       <Section>
         <div className="ui middle aligned grid container">
@@ -44,7 +44,7 @@ const Donate = () => {
           action={(
             <Button positive>DONATE</Button>
           )}
-          title="Support us"
+          title="Support us by making a donation"
 
         />
       </Section>
