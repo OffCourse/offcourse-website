@@ -24,7 +24,7 @@ const Build = (props) => {
       <Section>
         <div className="ui middle aligned grid container">
           <div className="centered row">
-            <div className="ten wide column">
+            <div className="sixteen wide tablet ten wide computer column">
               <p>You can help us build the Offcourse platform and its community further. If you support our view that learning should be accessible to people around the globe and that the way we learn can be optimised, and you support the principles of openness, ownership and collaboration, we invite you to contribute. Here are some examples of how you can contribute:</p>
 
               <ul>
