@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Button, CourseCard, CourseProvider } from 'offcourse-ui-components';
 import Helmet from 'react-helmet';
 import { navigateTo } from 'gatsby-link';
+import { slugify } from 'voca';
 
 import AuthTabs from '../components/AuthTabs';
 import CallToAction from '../components/CallToAction';
@@ -81,11 +82,17 @@ class IndexPage extends Component {
                   >
                     <CourseProvider courseQuery={{ curator: 'offcourse', goal }}>
                       {(course) => {
+                        const link = `users/${course.curator}/courses/${slugify(course.goal)}`;
+
                         return (
-                          <CourseCard centered course={course} hiddenFields={{}} />
+                          <div onClick={() => { navigateTo(link) }} style={{ cursor: 'pointer' }}>
+                            <div style={{ pointerEvents: 'none'}}>
+                              <CourseCard centered course={course} hiddenFields={{}} />
+                            </div>
+                          </div>
                         );
                       }}
-                    </CourseProvider>
+                      </CourseProvider>
                   </div>
                 );
               })}

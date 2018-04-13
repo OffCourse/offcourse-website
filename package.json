@@ -26,7 +26,8 @@
     "react-helmet": "^5.2.0",
     "react-tippy": "^1.2.2",
     "semantic-ui-less": "^2.2.14",
-    "semantic-ui-react": "^0.78.3"
+    "semantic-ui-react": "^0.78.3",
+    "voca": "^1.4.0"
   },
   "_engines": {
     "node": ">=8.10.0 <9.0.0"
