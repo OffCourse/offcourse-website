@@ -28,7 +28,8 @@ const Layout = (props) => {
           { name: 'description', content: 'Offcourse is an open source platform for crowdsourced learning and knowledge sharing.' },
         ]}
         link={[
-          { href: 'https://use.fontawesome.com/releases/v5.0.8/css/all.css', rel: 'stylesheet'},
+          { href: 'https://use.fontawesome.com/releases/v5.0.8/css/all.css', rel: 'stylesheet' },
+          { href: '/images/favicon.ico', rel: 'favicon' },
         ]}
       />
       <Header />
