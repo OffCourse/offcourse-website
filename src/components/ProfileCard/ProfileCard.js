@@ -52,7 +52,7 @@ const ProfileCard = (props) => {
       >
         <div className="ui labels">
           {profile.skills.map(skill => (
-            <a key={skill} href="#" className="ui mini label">{skill}</a>
+            <a key={skill} className="ui mini label">{skill}</a>
           ))}
         </div>
       </section>
