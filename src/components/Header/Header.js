@@ -24,12 +24,12 @@ class Header extends Component {
             <div className={`Header ${y > 0 ? 'scrolled' : ''}`}>
               <div className="Header__logo"><Logo /></div>
 
-              <button
+              <a
                 className="Header__hamburger"
                 onClick={() => { this.setState({ menuOpen: !menuOpen }); }}
               >
                 <i className="fas fa-bars" />
-              </button>
+              </a>
 
               <ul className={`Header__menu ${menuOpen ? 'active' : ''}`}>
                 <li className="Header__menu-item">
