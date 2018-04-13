@@ -42,7 +42,14 @@ const Donate = () => {
       <Section backgroundColor="offwhite">
         <CallToAction
           action={(
-            <Button positive>DONATE</Button>
+            <Button
+              positive
+              onClick={() => {
+                window.location.href = 'https://www.patreon.com/offcourse';
+              }}
+            >
+              DONATE
+            </Button>
           )}
           title="Support us by making a donation"
 
