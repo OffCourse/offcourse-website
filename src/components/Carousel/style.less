@@ -3,16 +3,6 @@
 @triangleSize: 20px;
 @smallTriangleSize: 10px;
 
-.Carousel {
-  min-height: 215px;
-}
-
-@media only screen and (max-width: @computerBreakpoint) {
-  .Carousel {
-    min-height: 260px;
-  }
-}
-
 .Carousel__nav {
   margin-bottom: 2rem;
   padding: 0 6rem;
@@ -42,6 +32,14 @@
   position: relative;
   text-align: justify;
   max-width: 100%;
+  min-height: 160px;
+
+}
+
+@media only screen and (max-width: @computerBreakpoint) {
+  .Carousel__item {
+    min-height: 300px;
+  }
 }
 
 .Carousel__item-prev, .Carousel__item-next {

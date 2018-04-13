@@ -6,6 +6,7 @@ import { navigateTo } from 'gatsby-link';
 import AuthTabs from '../components/AuthTabs';
 import CallToAction from '../components/CallToAction';
 import Carousel from '../components/Carousel';
+import Icon from '../components/Icon';
 import Hero from '../components/Hero';
 import Quote from '../components/Quote';
 import PostCard from '../components/PostCard';
@@ -118,7 +119,17 @@ class IndexPage extends Component {
               return (
                 <div key={item.id}>
                   <Quote text={item.title} />
-                  <p>{item.text}</p>
+                  <div className="ui items">
+                    <div className="item">
+                      <div className="image text-center">
+                        <Icon name={item.icon} size="huge" />
+                      </div>
+                      <div className="middle aligned content">
+                        <p>{item.text}</p>
+                      </div>
+                    </div>
+                  </div>
+
                 </div>
               )
             }}
