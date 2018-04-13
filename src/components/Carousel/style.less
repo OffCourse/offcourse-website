@@ -1,7 +1,16 @@
 @import '../../semantic/themes/offcourse/globals/site.variables';
 
+@triangleSize: 20px;
+@smallTriangleSize: 10px;
+
 .Carousel {
   min-height: 215px;
+}
+
+@media only screen and (max-width: @computerBreakpoint) {
+  .Carousel {
+    min-height: 260px;
+  }
 }
 
 .Carousel__nav {
@@ -35,8 +44,6 @@
   max-width: 100%;
 }
 
-@triangleSize: 20px;
-
 .Carousel__item-prev, .Carousel__item-next {
   position: absolute;
   top: calc(50% - @triangleSize);
@@ -47,6 +54,14 @@
   border-bottom: @triangleSize solid transparent;
 }
 
+@media only screen and (max-width: @computerBreakpoint) {
+  .Carousel__item-prev, .Carousel__item-next {
+    top: calc(50% - @smallTriangleSize);
+    border-top: @smallTriangleSize solid transparent;
+    border-bottom: @smallTriangleSize solid transparent;
+  }
+}
+
 .Carousel__item-prev {
   left: calc((@triangleSize + 32px) / -1);
   border-right: @triangleSize solid @positiveColor;
@@ -54,7 +69,8 @@
 
 @media only screen and (max-width: 767px) {
   .Carousel__item-prev {
-    left: 0;
+    left: calc((@smallTriangleSize + 16px) / -1);
+    border-right: @smallTriangleSize solid @positiveColor;
   }
 }
 
@@ -65,6 +81,7 @@
 
 @media only screen and (max-width: 767px) {
   .Carousel__item-next {
-    right: 0;
+    right: calc((@smallTriangleSize + 16px) / -1);
+    border-left: @smallTriangleSize solid @positiveColor;
   }
 }
