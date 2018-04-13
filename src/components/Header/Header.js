@@ -11,12 +11,12 @@ class Header extends Component {
     super(props);
 
     this.state = {
-      menuOpen: false,
+      isMenuOpen: false,
     }
   }
 
   render() {
-    const { menuOpen } = this.state;
+    const { isMenuOpen } = this.state;
 
     return (
       <ScrollWatch render={(x, y) => {
@@ -26,64 +26,88 @@ class Header extends Component {
 
               <a
                 className="Header__hamburger"
-                onClick={() => { this.setState({ menuOpen: !menuOpen }); }}
+                onClick={() => { this.setState({ isMenuOpen: !isMenuOpen }); }}
               >
                 <i className="fas fa-bars" />
               </a>
 
-              <ul className={`Header__menu ${menuOpen ? 'active' : ''}`}>
+              <ul className={`Header__menu ${isMenuOpen ? 'active' : ''}`}>
                 <li className="Header__menu-item">
                   <BasicButton
-                    onClick={() => { navigateTo('/'); }}
+                    onClick={() => {
+                      navigateTo('/');
+                      this.setState({ isMenuOpen: false });
+                    }}
                   >
                     Home
                   </BasicButton>
                 </li>
                 <li className="Header__menu-item">
                   <BasicButton
-                    onClick={() => { navigateTo('/join'); }}
+                    onClick={() => {
+                      navigateTo('/join');
+                      this.setState({ isMenuOpen: false });
+                    }}
                   >
                     Join
                   </BasicButton>
                 </li>
                 <li className="Header__menu-item">
                   <BasicButton
-                    onClick={() => { navigateTo('/build'); }}
+                    onClick={() => {
+                      navigateTo('/build');
+                      this.setState({ isMenuOpen: false });
+                    }}
                   >
                     Build
                   </BasicButton>
                 </li>
                 <li className="Header__menu-item">
                   <BasicButton
-                    onClick={() => { navigateTo('/collaborate'); }}
+                    onClick={() => {
+                      navigateTo('/collaborate');
+                      this.setState({ isMenuOpen: false });
+                    }}
                   >
                     Collaborate
                   </BasicButton>
                 </li>
                 <li className="Header__menu-item">
                   <BasicButton
-                    onClick={() => { navigateTo('/donate'); }}
+                    onClick={() => {
+                      navigateTo('/donate');
+                      this.setState({ isMenuOpen: false });
+                    }}
                   >
                     Donate
                   </BasicButton>
                 </li>
                 <li className="Header__menu-item">
                   <BasicButton
-                    onClick={() => { navigateTo('/blog'); }}
+                    onClick={() => {
+                      navigateTo('/blog');
+                      this.setState({ isMenuOpen: false });
+                    }}
                   >
                     Blog
                   </BasicButton>
                 </li>
                 <li className="Header__menu-item">
                   <BasicButton
-                    onClick={() => { navigateTo('/sign-in'); }}
+                    onClick={() => {
+                      navigateTo('/sign-in');
+                      this.setState({ isMenuOpen: false });
+                    }}
                   >
                     Go to platform
                   </BasicButton>
                 </li>
                 <li className="Header__menu-item">
                   <Button
-                    onClick={() => { navigateTo('/sign-up'); }}
+                    onClick={() => {
+                      navigateTo('/sign-up');
+                      this.setState({ isMenuOpen: false });
+                    }}
                     positive
                   >
                     Sign up
