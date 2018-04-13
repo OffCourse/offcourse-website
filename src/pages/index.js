@@ -162,8 +162,15 @@ class IndexPage extends Component {
         </Section>
         <Section>
           <CallToAction
-            action={<Button positive onClick={() => { navigateTo('/sign-up'); }}>JOIN NOW</Button>}
-            title="Join Offcourse"
+            action={
+              <button
+                type="button"
+                className="ui huge button positive"
+                onClick={() => { navigateTo('/sign-up'); }}
+               >
+                 JOIN NOW
+              </button>
+            }
           />
         </Section>
       </div>
