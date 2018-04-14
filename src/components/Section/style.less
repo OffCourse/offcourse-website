@@ -3,6 +3,14 @@
 .Section {
   padding: 4rem 0;
 
+  &.full-height {
+    height: 100vh;
+
+    > .grid {
+      height: 100%;
+    }
+  }
+
   &.white {
     background: @white;
   }

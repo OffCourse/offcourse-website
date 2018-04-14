@@ -9,6 +9,7 @@ const propTypes = {
     PropTypes.node,
     PropTypes.arrayOf(PropTypes.node),
   ]).isRequired,
+  hasFullHeight: PropTypes.bool,
   subtitle: PropTypes.string,
   title: PropTypes.string,
 };
@@ -20,10 +21,16 @@ const defaultProps = {
 };
 
 const Section = (props) => {
-  const { backgroundColor, children, subtitle, title } = props;
+  const {
+    backgroundColor,
+    children,
+    hasFullHeight,
+    subtitle,
+    title,
+  } = props;
 
   return (
-    <section className={`Section ${backgroundColor}`}>
+    <section className={`Section ${backgroundColor} ${hasFullHeight ? 'full-height' : ''}`}>
 
       {(subtitle || title) &&
         <div className="Section__header">

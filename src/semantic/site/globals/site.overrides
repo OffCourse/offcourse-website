@@ -41,6 +41,10 @@
   text-align: center;
 }
 
+.blown-up {
+  font-size: 12rem;
+}
+
 /*******************************
         Visibility Classes
 *******************************/
