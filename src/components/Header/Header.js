@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
 import { Button, BasicButton, Logo } from 'offcourse-ui-components';
-import { navigateTo } from 'gatsby-link';
+import Link, { navigateTo } from 'gatsby-link';
 
 import ScrollWatch from '../ScrollWatch';
 
@@ -22,7 +22,7 @@ class Header extends Component {
       <ScrollWatch render={(x, y) => {
           return (
             <div className={`Header ${y > 0 ? 'scrolled' : ''}`}>
-              <div className="Header__logo"><Logo /></div>
+              <Link to="/" className="Header__logo"><Logo /></Link>
 
               <a
                 className="Header__hamburger"
