@@ -1,13 +1,7 @@
 import React, { Component } from 'react';
-import {
-  AuthProvider,
-  Button,
-  Card,
-  Label,
-  Header,
-  SignInForm,
-  SignUpForm,
-} from 'offcourse-ui-components';
+import { Button, SignInForm, SignUpForm } from 'offcourse-ui-components';
+
+import AuthProvider from '../AuthProvider';
 
 import './style.less';
 
@@ -22,7 +16,13 @@ class AuthTabs extends Component {
 
   render() {
     const { activeMenuItem } = this.state;
-    const handler = data => alert(JSON.stringify(data, null, 2));
+    const handler = (data) => {
+      const { authStatus } = data;
+
+      if (authStatus === 'SIGNED_IN') {
+        window.location.href = 'https://app.offcourse.io';
+      }
+    };
 
     return (
       <div className="AuthTabs">
@@ -56,23 +56,12 @@ class AuthTabs extends Component {
                     needsConfirmation,
                     refreshToken
                   } = authData;
-                  return authStatus !== "SIGNED_IN" ? (
+                  return authStatus !== 'SIGNED_IN' &&
                     <SignUpForm
                       confirmMode={needsConfirmation}
                       errors={errors}
                       onSubmit={signUp}
                     />
-                  ) : (
-                    <Card>
-                      <div>
-                        <Label>User Name</Label>
-                        <Header>{userName}</Header>
-                      </div>
-                      <div>
-                        <Button onClick={signOut}>Sign Out</Button>
-                      </div>
-                    </Card>
-                  );
                 }}
               </AuthProvider>
             }
@@ -86,17 +75,8 @@ class AuthTabs extends Component {
                     accessToken,
                     refreshToken
                   } = authData;
-                  return authStatus !== "SIGNED_IN" ? (
+                  return authStatus !== 'SIGNED_IN' &&
                     <SignInForm errors={errors} onSubmit={signIn} />
-                  ) : (
-                    <Card>
-                      <div>
-                        <Label>User Name</Label>
-                        <Header>{userName}</Header>
-                      </div>
-                      <Button onClick={signOut}>Sign Out</Button>
-                    </Card>
-                  );
                 }}
               </AuthProvider>
 

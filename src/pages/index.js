@@ -57,9 +57,9 @@ class IndexPage extends Component {
                 <Button positive onClick={() => { navigateTo('/sign-in'); }}>GO TO PLATFORM</Button>
               </div>
 
-              {/*<div className="sixteen wide mobile eight wide tablet six wide computer right floated column">
+              <div className="sixteen wide mobile eight wide tablet six wide computer right floated column">
                 <AuthTabs />
-              </div>*/}
+              </div>
             </div>
           </div>
         </Hero>
