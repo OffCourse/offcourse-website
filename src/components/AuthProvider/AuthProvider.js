@@ -1,51 +1,64 @@
-import React, { Component } from "react";
-import cognito from "./Cognito";
+import React, { Component } from 'react';
+import cognito from './Cognito';
 
-const SIGNED_OUT = "SIGNED_OUT";
-const SIGNED_IN = "SIGNED_IN";
+const SIGNED_OUT = 'SIGNED_OUT';
+const SIGNED_IN = 'SIGNED_IN';
+
+const defaultProps = {
+  onSignIn: authData => console.log(authData),
+  onSignOut: authData => console.log(authData),
+};
 
 const defaultState = {
   authStatus: SIGNED_OUT,
-  userName: "",
-  accessToken: "",
-  refreshToken: "",
+  userName: '',
+  accessToken: '',
+  refreshToken: '',
   needsConfirmation: false,
-  errors: {}
+  errors: {},
 };
 
 class AuthProvider extends Component {
-  state = {
-    ...defaultState
-  };
+  constructor(props) {
+    super(props);
 
-  handleError = error => {
+    this.signIn = this.signIn.bind(this);
+    this.signUp = this.signUp.bind(this);
+    this.confirmSignUp = this.confirmSignUp.bind(this);
+    this.resetPassword = this.resetPassword.bind(this);
+    this.confirmNewPassword = this.confirmNewPassword.bind(this);
+    this.signOut = this.signOut.bind(this);
+
+    this.state = defaultState;
+  }
+
+  handleError(error) {
     const { errors } = this.state;
     this.setState({ errors: { ...errors, ...error } });
-  };
+  }
 
-  signIn = async authData => {
+  async signIn(authData) {
     try {
-      const { userName, accessToken, refreshToken } = await cognito.signIn(
-        authData
-      );
+      const { userName, accessToken, refreshToken } = await cognito.signIn(authData);
+
       this.setState({
         authStatus: SIGNED_IN,
         userName,
         accessToken,
-        refreshToken
+        refreshToken,
       });
-      this.props.onSignIn({
-        ...this.state
-      });
+
+      this.props.onSignIn({ ...this.state });
     } catch (error) {
       this.handleError(error);
     }
-  };
+  }
 
-  signUp = async authData => {
+  async signUp(authData) {
     try {
       const response = await cognito.signUp(authData);
       const { userName, password } = authData;
+
       this.setState({
         needsConfirmation: true,
         userName,
@@ -54,22 +67,24 @@ class AuthProvider extends Component {
     } catch (error) {
       this.handleError(error);
     }
-  };
+  }
 
-  confirmSignUp = async authData => {
+  async confirmSignUp(authData) {
     try {
       const response = await cognito.confirmSignUp(authData);
       const { userName, password } = this.state;
+
       this.signIn(authData);
     } catch (error) {
       this.handleError(error);
     }
-  };
+  }
 
-  resetPassword = async authData => {
+  async resetPassword(authData) {
     try {
       const response = await cognito.resetPassword(authData);
       const { userName } = authData;
+
       this.setState({
         needsConfirmation: true,
         userName
@@ -77,25 +92,27 @@ class AuthProvider extends Component {
     } catch (error) {
       this.handleError(error);
     }
-  };
+  }
 
-  confirmNewPassword = async authData => {
+  async confirmNewPassword(authData) {
     try {
       const { userName } = this.state;
       const response = await cognito.resetPassword({ userName, ...authData });
       const { password } = authData;
+
       this.signIn({ userName, password });
     } catch (error) {
       this.handleError(error);
     }
-  };
+  }
 
-  signOut = async () => {
+  async signOut() {
     await cognito.signOut;
     this.setState({ ...defaultState });
     const { authStatus } = this.state;
+
     this.props.onSignOut({ authStatus });
-  };
+  }
 
   render() {
     const { children, ...rest } = this.props;
@@ -119,9 +136,6 @@ class AuthProvider extends Component {
   }
 }
 
-AuthProvider.defaultProps = {
-  onSignIn: authData => console.log(authData),
-  onSignOut: authData => console.log(authData)
-};
+AuthProvider.defaultProps = defaultProps;
 
 export default AuthProvider;

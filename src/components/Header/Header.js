@@ -1,4 +1,4 @@
-import React, { Component} from 'react';
+import React, { Component } from 'react';
 import { Button, BasicButton, Logo } from 'offcourse-ui-components';
 import Link, { navigateTo } from 'gatsby-link';
 

@@ -2,23 +2,30 @@ import {
   AuthenticationDetails,
   CognitoUserAttribute,
   CognitoUser,
-  CognitoUserPool
-} from "amazon-cognito-identity-js";
+  CognitoUserPool,
+} from 'amazon-cognito-identity-js';
 
 class Cognito {
   constructor({ UserPoolId, ClientId }) {
+    this.signOut = this.signOut.bind(this);
+    this.resetPassword = this.resetPassword.bind(this);
+    this.confirmNewPassword = this.confirmNewPassword.bind(this);
+    this.signUp = this.signUp.bind(this);
+    this.confirmSignUp = this.confirmSignUp.bind(this);
+    this.signIn = this.signIn.bind(this);
+  
     this.userPool = new CognitoUserPool({
       UserPoolId,
-      ClientId
+      ClientId,
     });
   }
 
-  signOut = async () => {
+  async signOut() {
     console.log(cognitoUser);
     await cognitoUser.signOut();
-  };
+  }
 
-  resetPassword = async ({ userName }) => {
+  async resetPassword({ userName }) {
     const cognitoUser = new CognitoUser({
       Username: userName,
       Pool: this.userPool
@@ -38,12 +45,12 @@ class Cognito {
         }
       });
     });
-  };
+  }
 
-  confirmNewPassword = async ({ userName, password, confirmationCode }) => {
+  async confirmNewPassword({ userName, password, confirmationCode }) {
     const cognitoUser = new CognitoUser({
       Username: userName,
-      Pool: this.userPool
+      Pool: this.userPool,
     });
 
     const errorResponses = {};
@@ -53,24 +60,24 @@ class Cognito {
         onSuccess: resolve,
         onFailure: error => {
           console.log(error);
-          reject({ confirmationCode: "invalid confirmation code" });
+          reject({ confirmationCode: 'invalid confirmation code' });
         }
       });
     });
-  };
+  }
 
-  signUp = ({ userName, password, email }) => {
+  signUp({ userName, password, email }) {
     const dataEmail = {
-      Name: "email",
-      Value: email
+      Name: 'email',
+      Value: email,
     };
     const attributeEmail = new CognitoUserAttribute(dataEmail);
     const attributeList = [attributeEmail];
 
     const errorResponses = {
       UsernameExistsException: {
-        userName: "user name is taken"
-      }
+        userName: 'user name is taken',
+      },
     };
 
     return new Promise((resolve, reject) => {
@@ -89,12 +96,12 @@ class Cognito {
         }
       );
     });
-  };
+  }
 
-  confirmSignUp = async ({ userName, confirmationCode }) => {
+  async confirmSignUp({ userName, confirmationCode }) {
     const cognitoUser = new CognitoUser({
       Username: userName,
-      Pool: this.userPool
+      Pool: this.userPool,
     });
 
     return new Promise((resolve, reject) => {
@@ -111,17 +118,17 @@ class Cognito {
         }
       );
     });
-  };
+  }
 
-  signIn = async ({ userName, password }) => {
+  async signIn({ userName, password }) {
     const authData = new AuthenticationDetails({
       Username: userName,
-      Password: password
+      Password: password,
     });
 
     const cognitoUser = new CognitoUser({
       Username: userName,
-      Pool: this.userPool
+      Pool: this.userPool,
     });
 
     return new Promise((resolve, reject) => {
@@ -135,7 +142,7 @@ class Cognito {
         },
         onFailure: error => {
           console.log(error);
-          reject({ userName: "invalid user name or password" });
+          reject({ userName: 'invalid user name or password' });
         }
       });
     });
@@ -143,8 +150,8 @@ class Cognito {
 }
 
 const cognito = new Cognito({
-  UserPoolId: "us-east-1_KrD1aUKhs",
-  ClientId: "ga43rgf1nmg1ejbevg375se20"
+  UserPoolId: 'us-east-1_KrD1aUKhs',
+  ClientId: 'ga43rgf1nmg1ejbevg375se20'
 });
 
 export default cognito;
