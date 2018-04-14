@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 import { navigateTo } from 'gatsby-link';
 import { slugify } from 'voca';
 
-import AuthTabs from '../components/AuthTabs';
+//import AuthTabs from '../components/AuthTabs';
 import CallToAction from '../components/CallToAction';
 import Carousel from '../components/Carousel';
 import Icon from '../components/Icon';
@@ -57,9 +57,10 @@ class IndexPage extends Component {
                 <Button positive onClick={() => { navigateTo('/sign-in'); }}>GO TO PLATFORM</Button>
               </div>
 
-              <div className="sixteen wide mobile eight wide tablet six wide computer right floated column">
+              {/*<div className="sixteen wide mobile eight wide tablet six wide computer right floated column">
                 <AuthTabs />
               </div>
+              {*/}
             </div>
           </div>
         </Hero>
