@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import 'regenerator-runtime/runtime';
+
 import cognito from './Cognito';
 
 const SIGNED_OUT = 'SIGNED_OUT';

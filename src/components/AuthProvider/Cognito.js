@@ -5,6 +5,8 @@ import {
   CognitoUserPool,
 } from 'amazon-cognito-identity-js';
 
+import 'regenerator-runtime/runtime';
+
 class Cognito {
   constructor({ UserPoolId, ClientId }) {
     this.signOut = this.signOut.bind(this);
@@ -13,7 +15,7 @@ class Cognito {
     this.signUp = this.signUp.bind(this);
     this.confirmSignUp = this.confirmSignUp.bind(this);
     this.signIn = this.signIn.bind(this);
-  
+
     this.userPool = new CognitoUserPool({
       UserPoolId,
       ClientId,
