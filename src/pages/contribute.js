@@ -9,18 +9,18 @@ import PageHeader from '../components/PageHeader';
 import Section from '../components/Section';
 
 
-const Donate = () => {
+const Contribute = () => {
   return (
     <div>
       <Helmet
-        title="Donate | Offcourse"
+        title="Contribute | Offcourse"
         meta={[
           { name: 'description', content: 'Offcourse is an open source platform for crowdsourced learning and knowledge sharing.' },
         ]}
       />
       <PageHeader
-        title="Donate"
-        subtitle="Another way to contribute"
+        title="Contribute"
+        subtitle="How to contribute to the Offcourse project"
       />
       <Section>
         <div className="ui middle aligned grid container">
@@ -31,9 +31,9 @@ const Donate = () => {
               />
 
               <p>Today, professional education offers 6 year curricula, expensive courses, and one-size-fits-all courses. Many talents worldwide don't have the time or money to follow such programs. It is our aim to make learning accessible to people around the globe and put an end to <strong>talent waste</strong>.</p>
-              <p>Our platform helps learners of all shapes and sizes to improve their learning. We provide a space where the web's best learning resources can be stored and shared. We encourage our community to explore, contribute, and share collections of hand-curated links.</p>
-              <p>Offcourse is a not-for-profit organization. The learning platform we build is continuously under development. You can help us by making a donation to carry our mission forward.</p>
-
+              <p>Our platform helps learners of all shapes and sizes to improve their learning. We provide a space where the web's best learning resources can be stored and shared. A space for optimal and personalized learning.</p>
+              <p>Offcourse is a not-for-profit organization. The learning platform we build is continuously under development. You can help us by supporting our project. Support us by giving a star on our GitHub repository so we can become an Open Collective. This allows Offcourse to raise funds for development, while being in full transparency with our community. More information on this can be found on our GitHub. </p>
+              <p>If you are a developer, designer or blogger, there are other ways you can contribute to Offcourse as well. Have a look on our build page for the possibilities. </p>
             </div>
           </div>
         </div>
@@ -48,15 +48,15 @@ const Donate = () => {
                 window.location.href = 'https://www.patreon.com/offcourse';
               }}
             >
-              DONATE
+              GIVE A STAR
             </Button>
           )}
-          title="Support us by making a donation"
-
+          title="Support us by giving a star on our GitHub"
+          subtitle="Our goal is to reach 100 stars to become an Open Collective project"
         />
       </Section>
     </div>
   );
 };
 
-export default Donate;
+export default Contribute;
