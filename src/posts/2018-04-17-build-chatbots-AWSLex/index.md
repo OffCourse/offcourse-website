@@ -2,7 +2,7 @@
 path: "/blog/build-a-chatbot-with-AWS-Lex"
 date: "2018-04-17"
 title: "The basics of building a Chatbot with Amazon Lex"
-featuredImage: "../assets/img/chatbot.jpg"
+featuredImage: "chatbot.jpg"
 ---
 
 

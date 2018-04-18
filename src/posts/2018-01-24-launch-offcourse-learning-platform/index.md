@@ -2,7 +2,7 @@
 path: "/blog/launch-offcourse-learning-platform"
 date: "2018-01-24"
 title: "Personal learning anywhere with Offcourse"
-featuredImage: "../assets/img/offcourse_platform.jpg"
+featuredImage: "offcourse_platform.jpg"
 ---
 
 

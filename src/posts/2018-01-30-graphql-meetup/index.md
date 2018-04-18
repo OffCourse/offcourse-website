@@ -2,7 +2,7 @@
 path: "/blog/introduction-graphql-meetup"
 date: "2018-01-30"
 title: "An introduction into GraphQL - Serverless Meetup Rotterdam"
-featuredImage: "../assets/img/graphql.jpg"
+featuredImage: "graphql.jpg"
 ---
 
 

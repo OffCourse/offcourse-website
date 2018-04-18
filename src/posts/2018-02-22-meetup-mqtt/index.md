@@ -2,7 +2,7 @@
 path: "/blog/IOT-machine-to-machine-communication-meetup"
 date: "2018-02-22"
 title: "Internet-of-Things and Machine-to-Machine communication"
-featuredImage: "../assets/img/mqtt_meetup.jpg"
+featuredImage: "mqtt_meetup.jpg"
 ---
 
 **This is a recap of the Serverless Meetup Rotterdam on the topic of MQTT**
