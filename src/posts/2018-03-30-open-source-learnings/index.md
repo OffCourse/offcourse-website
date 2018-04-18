@@ -2,7 +2,7 @@
 path: "/blog/open-source-learnings"
 date: "2018-03-30"
 title: "Sharing my challenges and lessons learned in building an open source product"
-featuredImage: "../assets/img/offcourse_team.jpg"
+featuredImage: "offcourse_team.jpg"
 ---
 
 **This blog is written by Jan Hein Hoogstad, founder and developer of Offcourse.**

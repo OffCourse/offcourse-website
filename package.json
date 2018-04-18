@@ -11,7 +11,6 @@
     "gatsby-image": "^1.0.41",
     "gatsby-link": "^1.6.37",
     "gatsby-plugin-less": "^1.1.5",
-    "gatsby-plugin-netlify-cms": "^1.0.12",
     "gatsby-plugin-react-helmet": "^2.0.5",
     "gatsby-plugin-react-next": "^1.0.10",
     "gatsby-plugin-sharp": "^1.6.41",
@@ -28,6 +27,7 @@
     "react-helmet": "^5.2.0",
     "react-tippy": "^1.2.2",
     "regenerator-runtime": "^0.11.1",
+    "rehype-react": "^3.0.2",
     "semantic-ui-less": "^2.2.14",
     "semantic-ui-react": "^0.78.3",
     "voca": "^1.4.0"

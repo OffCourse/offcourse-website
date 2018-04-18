@@ -13,7 +13,6 @@ import Quote from '../components/Quote';
 import PostCard from '../components/PostCard';
 import Section from '../components/Section';
 
-import mountainImg from '../assets/img/mountain.jpg';
 
 class IndexPage extends Component {
   constructor(props) {

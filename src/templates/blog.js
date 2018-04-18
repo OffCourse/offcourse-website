@@ -1,5 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
+import rehypeReact from 'rehype-react';
 
 import CallToAction from '../components/CallToAction';
 import Hero from '../components/Hero';
@@ -10,7 +11,11 @@ import Share from '../components/Share';
 const BlogTemplate = (props) => {
   const { data } = props;
   const { markdownRemark } = data;
-  const { excerpt, frontmatter, html } = markdownRemark;
+  const { excerpt, frontmatter, htmlAst } = markdownRemark;
+
+  const renderAst = new rehypeReact({
+    createElement: React.createElement,
+  }).Compiler;
 
   return (
     <div>
@@ -38,8 +43,9 @@ const BlogTemplate = (props) => {
             <div className="sixteen wide tablet ten wide computer column">
               <div
                 className="blog-post-content"
-                dangerouslySetInnerHTML={{ __html: html }}
-              />
+              >
+                {renderAst(htmlAst)}
+              </div>
               <br />
               <hr />
               <Share
@@ -67,7 +73,7 @@ export default BlogTemplate;
 export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
-      html
+      htmlAst
       excerpt(pruneLength: 250)
       frontmatter {
         date(formatString: "MMMM DD, YYYY")

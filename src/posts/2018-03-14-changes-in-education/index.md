@@ -2,7 +2,7 @@
 path: "/blog/changes-in-education"
 date: "2018-03-14"
 title: "Changes in education are long overdue - the minute development of alternative education"
-featuredImage: "../assets/img/education.jpg"
+featuredImage: "education.jpg"
 ---
 
 When we learn new skills, we all have our own preferences as to how we learn and for what reasons we want to learn these new skills. Some people still prefer to go to a physical classroom and hear a teacher speaking, but it might well be you take much more knowledge in by reading or watching videos. Also, the time you have available or are willing to spend on gaining these new skills really affects your preferred way of learning.
