@@ -49,8 +49,14 @@
         Visibility Classes
 *******************************/
 
-.show-for-computer {
+.show-for-computer, .show-for-mobile {
   display: none;
+}
+
+@media only screen and (max-width: @tabletBreakpoint) {
+  .show-for-mobile {
+    display: block !important;
+  }
 }
 
 @media only screen and (min-width: @computerBreakpoint) {
