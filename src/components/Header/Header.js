@@ -75,11 +75,11 @@ class Header extends Component {
                 <li className="Header__menu-item">
                   <BasicButton
                     onClick={() => {
-                      navigateTo('/donate');
+                      navigateTo('/contribute');
                       this.setState({ isMenuOpen: false });
                     }}
                   >
-                    Donate
+                    Contribute
                   </BasicButton>
                 </li>
                 <li className="Header__menu-item">
