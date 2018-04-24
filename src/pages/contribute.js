@@ -45,7 +45,7 @@ const Contribute = () => {
             <Button
               positive
               onClick={() => {
-                window.location.href = 'https://www.patreon.com/offcourse';
+                window.location.href = 'https://github.com/OffCourse/offcourse-next';
               }}
             >
               GIVE A STAR
