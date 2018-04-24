@@ -3,16 +3,23 @@
 .PageHeader {
   background: @offWhite;
   text-align: center;
-  padding-top: 6rem;
-  padding-bottom: 4rem;
+  padding-top: 9rem;
+  padding-bottom: 8rem;
 }
 
 .PageHeader__title {
   margin-bottom: 0;
+  font-size: 4.5rem;
 }
 
 .PageHeader__subtitle {
   margin-top: 0;
   font-size: @h3;
   font-weight: normal;
+}
+
+@media only screen and (max-width: @computerBreakpoint) {
+  .PageHeader__title {
+    font-size: 3rem;
+  }
 }

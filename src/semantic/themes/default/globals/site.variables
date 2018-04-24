@@ -62,7 +62,7 @@
 ---------------*/
 
 @headerFontWeight : @bold;
-@headerLineHeight : unit((18 / 14), em);
+@headerLineHeight : unit((16 / 14), em);
 
 @h1 : unit((28 / 14), rem);
 @h2 : unit((24 / 14), rem);

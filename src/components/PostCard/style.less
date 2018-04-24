@@ -1,9 +1,10 @@
 @import '../../semantic/themes/offcourse/globals/site.variables';
 
+
 .PostCard__body {
   background: @white;
   margin-left: 5%;
-  padding: 1rem 1rem 4rem 1rem;
+  padding: 3.5rem 4rem 5rem 4rem;
   transform: translateY(-3rem);
   width: 90%;
 
@@ -12,5 +13,12 @@
     margin: 0;
     position: absolute;
     right: 0;
+    margin-right: 0 !important;
+  }
+}
+
+@media only screen and (max-width: @computerBreakpoint) {
+  .PostCard__body {
+    padding: 3.5rem 2rem 5rem 2rem;
   }
 }

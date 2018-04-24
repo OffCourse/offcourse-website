@@ -122,7 +122,13 @@ const JoinPage = (props) => {
         <CallToAction
           action={(
             <div>
-              <Button positive onClick={() => { navigateTo('/sign-up'); }}>JOIN</Button>
+              <button
+                type="button"
+                className="ui huge button positive"
+                onClick={() => { navigateTo('/sign-up'); }}
+               >
+                 JOIN NOW
+              </button>
               <br /><br />
               <p className="c-grey">or follow us on <a href="https://twitter.com/offcourse_">Twitter</a> and  <a href="https://www.linkedin.com/company/7962249/">LinkedIn</a> and show your appreciation with #offcourse and #crowdlearning.</p>
             </div>

@@ -110,7 +110,7 @@ class Header extends Component {
                     }}
                     positive
                   >
-                    Sign up
+                    Join now
                   </Button>
                 </li>
               </ul>

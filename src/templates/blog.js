@@ -74,7 +74,7 @@ export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       htmlAst
-      excerpt(pruneLength: 250)
+      excerpt(pruneLength: 180)
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         path

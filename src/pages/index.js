@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, CourseCard, CourseProvider } from 'offcourse-ui-components';
 import Helmet from 'react-helmet';
-import { navigateTo } from 'gatsby-link';
+import Link, { navigateTo } from 'gatsby-link';
 import { slugify } from 'voca';
 
 import CallToAction from '../components/CallToAction';
@@ -12,6 +12,8 @@ import Quote from '../components/Quote';
 import PostCard from '../components/PostCard';
 import Section from '../components/Section';
 import SignUp from '../components/SignUp';
+
+import backgroundImage from '../assets/img/background-image.jpg';
 
 const IndexPage = (props) => {
   const { data } = props;
@@ -33,7 +35,7 @@ const IndexPage = (props) => {
         ]}
       />
       <Hero
-        backgroundColor="primary"
+        backgroundImage={backgroundImage}
       >
         <div className="ui grid container">
           <div className="middle aligned row">
@@ -41,7 +43,13 @@ const IndexPage = (props) => {
               <h1>Share what you know. <br className="show-for-computer" />Show who you are.</h1>
               <p>Offcourse is an open source platform for crowdsourced learning and knowledge sharing. We call it <strong>crowdlearning</strong> for short.</p>
               <p>Anything you find on the web can become part of your personal learning course: blogs, video tutorials, podcasts, you name it. Create collections of learning resources, store them in one place, and share them with like-minded people around the globe.</p>
-              <Button positive onClick={() => { navigateTo('/sign-in'); }}>GO TO PLATFORM</Button>
+              <br />
+              <Link
+                to="/sign-in"
+                className="big ui button positive"
+              >
+                GO TO PLATFORM
+              </Link>
               <br className="show-for-mobile" /><br className="show-for-mobile" />
             </div>
 
@@ -157,6 +165,7 @@ const IndexPage = (props) => {
       </Section>
       <Section>
         <CallToAction
+          title="Share what you know. Show who you are."
           action={
             <button
               type="button"
@@ -183,7 +192,7 @@ export const pageQuery = graphql`
       edges {
         node {
           id
-          excerpt(pruneLength: 250)
+          excerpt(pruneLength: 180)
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             path

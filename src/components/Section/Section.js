@@ -37,21 +37,13 @@ const Section = (props) => {
           {title &&
             <div className="ui grid container">
               <div className="centered row">
-                <div className="sixteen wide center aligned column">
-                  <h1 className="Section__header-title">{title}</h1>
-                </div>
-              </div>
-            </div>
-          }
-          {subtitle &&
-            <div className="ui grid container">
-              <div className="centered row">
                 <div className="sixteen wide tablet ten wide computer center aligned column">
-                  <p>{subtitle}</p>
+                  <h1 className="Section__header-title">{title}</h1>
+                  {subtitle && <p>{subtitle}</p>}
                 </div>
               </div>
             </div>
-          }
+          }        
         </div>
       }
 

@@ -37,12 +37,8 @@ const ProfileCard = (props) => {
           </div>
         }
 
-        <div className="meta">
-          Misfit
-        </div>
-
-        <div className="header">
-          <a className="curator-info" href="#">{profile.name}</a>
+        <div className="header" style={{ paddingTop: '1rem' }}>
+          <a className="curator-info">{profile.name}</a>
         </div>
       </section>
 
