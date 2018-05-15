@@ -7,6 +7,7 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-less',
     'gatsby-plugin-react-next',
+    'gatsby-plugin-tracking',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
