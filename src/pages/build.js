@@ -25,16 +25,16 @@ const Build = (props) => {
         <div className="ui middle aligned grid container">
           <div className="centered row">
             <div className="sixteen wide tablet ten wide computer column">
-              <p>You can help us build the Offcourse platform and its community further. If you support our view that learning should be accessible to people around the globe and that the way we learn can be optimised, and you support the principles of openness, ownership and collaboration, we invite you to contribute. Here are some examples of how you can contribute:</p>
-
+              <p>You can help us expand the Offcourse platform and its community. If you support openness, ownership and collaboration as much as we do, we invite you to contribute to our initiative and share with others how Ofccourse helped you.</p>
+              <p>Here are a few ways you can help this community grow:</p>
               <ul>
-                <li>contribute open source code (all developer levels)</li>
-                <li>help grow our movement by writing about us</li>
-                <li>share your personal learning story through Offcourse</li>
-                <li>help design the platform</li>
-                <li>mentor developers within the community</li>
-                <li>speak about us at events</li>
-                <li>bring in your own ideas on how you want to contribute</li>
+                <li>share code as open source (all developer levels)</li>
+                <li>help us expand the movement by writing about Offcourse</li>
+                <li>publish articles on how you gained knowledge and developed new skills by using this platform</li>
+                <li>help us design and further develop the platform</li>
+                <li>mentor new developers within the community</li>
+                <li>give a talk about Offcourse at events</li>
+                <li>let us know if you have any other ideas on how you'd like to contribute</li>
               </ul>
 
             </div>

@@ -41,8 +41,8 @@ const IndexPage = (props) => {
           <div className="middle aligned row">
             <div className="sixteen wide mobile eight wide tablet eight wide computer left floated column">
               <h1>Share what you know. <br className="show-for-computer" />Show who you are.</h1>
-              <p>Offcourse is an open source platform for crowdsourced learning and knowledge sharing. We call it <strong>crowdlearning</strong> for short.</p>
-              <p>Anything you find on the web can become part of your personal learning course: blogs, video tutorials, podcasts, you name it. Create collections of learning resources, store them in one place, and share them with like-minded people around the globe.</p>
+              <p>Offcourse is an open source platform for crowdsourced learning and knowledge sharing. Or as we like to call it: <strong>crowdlearning</strong>.</p>
+              <p>Anything you find on the web can become part of your personal learning journey: blogs, video tutorials, podcasts, you name it. Compile collections of knowledge resources to store in one place, and share them with people around the globe.</p>
               <br />
               <Link
                 to="/sign-in"
@@ -103,19 +103,19 @@ const IndexPage = (props) => {
               id: 'slide-1',
               icon: 'fab fa-searchengin',
               title: '1. Pick',
-              text: 'Pick links to the best online resources. Make use of knowledge that is already out there as opposed to starting from scratch.',
+              text: 'Hand-pick links to the best online resources. Make use of knowledge that is already out there and assembled by like-minded people, as opposed to starting from scratch.',
             },
             {
               id: 'slide-2',
               icon: 'fas fa-wrench',
               title: '2. Tweak',
-              text: 'Tweak course material to make it suit your style.',
+              text: 'This is learning, tailored to your needs. Discover your way of learning and tweak course material as you like.',
             },
             {
               id: 'slide-3',
               icon: 'fas fa-bullhorn',
               title: '3. Push',
-              text: 'Push your course content to the platform and externally. Share knowledge with the crowd.',
+              text: 'Publish your course content on our platform and share your knowledge with the world.',
             },
           ]}
           render={(item) => {
