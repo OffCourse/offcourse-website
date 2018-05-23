@@ -23,6 +23,9 @@ const Footer = () => {
             <Link to="/contribute">Contribute</Link>
           </div>
           <div className="item">
+            <Link to="/faq">FAQ</Link>
+          </div>
+          <div className="item">
             <Link to="/sign-in">Go to platform</Link>
           </div>
           <div className="item">
