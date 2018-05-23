@@ -30,10 +30,10 @@ const Contribute = () => {
                 text="Offcourse's mission is to turn talents into professionals. We offer them tools to develop 21st Century Skills, such as design, entrepreneurship and programming."
               />
 
-              <p>Today, professional education offers 6 year curricula, expensive courses, and one-size-fits-all courses. Many talents worldwide don't have the time or money to follow such programs. It is our aim to make learning accessible to people around the globe and put an end to <strong>talent waste</strong>.</p>
-              <p>Our platform helps learners of all shapes and sizes to improve their learning. We provide a space where the web's best learning resources can be stored and shared. A space for optimal and personalized learning.</p>
-              <p>Offcourse is a not-for-profit organization. The learning platform we build is continuously under development. You can help us by supporting our project. Support us by giving a star on our GitHub repository so we can become an Open Collective. This allows Offcourse to raise funds for development, while being in full transparency with our community. More information on this can be found on our GitHub. </p>
-              <p>If you are a developer, designer or blogger, there are other ways you can contribute to Offcourse as well. Have a look on our build page for the possibilities. </p>
+              <p>It is our aim to make learning accessible to people around the globe and put an end to <strong>talent waste</strong>. We offer a platform where learners of all shapes and sizes can optimize their personal learning process. You, as individual or as organization, can contribute to this initiative.</p>
+              <p>Offcourse is a not-for-profit organization. We offer our platform's users tools to develop 21st Century Skills, such as design, entrepreneurship and programming which help talents turn into professionals. The learning platform we have built is continuously evolving. </p>
+              <p>Help us by contributing to our project. Support our development by giving a star on our GitHub repository so we can become an Open Collective. This allows us to raise funds for further development of Offcourse, while maintaining full and complete transparancy towards our community. More information on this can be found on our GitHub.</p>
+              <p>If you are a developer, designer or blogger, there are other ways you can contribute to Offcourse as well. Check out the Build page to learn more about these possibilities. </p>
             </div>
           </div>
         </div>

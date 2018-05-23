@@ -94,8 +94,8 @@ const JoinPage = (props) => {
         <div className="ui middle aligned grid container">
           <div className="centered row">
             <div className="sixteen wide tablet ten wide computer column">
-              <p>It's not where you're from, it's where you want to be. This is the principle of our open source learning platform. If we share what we know, and collect that knowledge in one place, we all learn from each other and we can grow our skills in the area we want. That is why we support open source and open knowledge.</p>
-              <p>Our aim is to help you grow as a professional. Offcourse focuses on 21st Century Skills, such as design, entrepreneurship and programming. We don't believe in 6 year curricula, long, boring lectures, and one-size-fits-all courses. Instead you assemble your skills bit by bit. When you're ready, share that newfound knowledge back with the Offcourse community.</p>
+              <p>It's not where you're from, it's where you want to be. So why wait? Kick-start your own professional development with Offcourse. Because if we all start assembling and sharing our newfound knowledge with one another, we'll all be able to learn and develop any skill we  want. Join our community and discover why open collaboration works.</p>
+              <p>Offcourse focuses on 21st Century Skills such as design, entrepreneurship and programming. We don't believe in 6 year curricula, boring lectures, and one-size-fits-all courses. Instead, you assemble new knowledge and develop your skills, bit by bit, until you're ready to share that newfound knowledge with the Offcourse community.</p>
             </div>
           </div>
         </div>
@@ -105,7 +105,7 @@ const JoinPage = (props) => {
           <div className="row">
             <div className="eight wide column">
               <Quote
-                text="If everybody shares what they know in one place, anybody can learn what they want. That is what all members of the Offcourse community believe in and why we support open collaboration."
+                text="If everybody shares what they know in one place, anybody can learn what they want. That is what Offcourse envisions, and why this community supports open collaboration."
               />
             </div>
             <div className="eight wide column">
@@ -139,7 +139,7 @@ const JoinPage = (props) => {
       <Section
         backgroundColor="offwhite"
         title="Our Band of Misfits"
-        subtitle="We are a group of people who share the same beliefs, not necessarily the same (educational) backgrounds or levels. What we have in common is that we are a band of misfits - we have a different view on education and learning from the traditional system."
+        subtitle="We are a group of people who share the same idea. We may not all share the same backgrounds or levels, but what we have in common is that we are a band of misfits. A group of people who are choosing a radical approach to learning."
       >
 
         <div className="ui stackable grid container">

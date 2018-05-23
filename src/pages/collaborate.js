@@ -37,8 +37,8 @@ const Collaborate = (props) => {
         <div className="ui middle aligned grid container">
           <div className="centered row">
             <div className="sixteen wide tablet ten wide computer column">
-              <p>Offcourse's mission is to turn talents into professionals. Our platform helps learners of all shapes and sizes to improve their learning and to create a space for people to share knowledge. We are open to partnering with knowledge institutions of different kinds to achieve this mission. Institutions who aim to have a societal impact in the area of knowledge sharing and/or learning are partners we are happy to work with.</p>
-              <p>In addition to partnering (e.g. knowledge sharing or organizing events), we also collaborate with teams that are in need of tooling for which Offcourse is suitable. You can therefore also contact us for partnership opportunities if you are looking for a better tool for communication, learning, documentation, and knowledge sharing.</p>
+              <p>Offcourse helps eager minds around the world gain new knowledge, develop and improve their skills, and share what they've learned. If you share the same vision, we invite you to join forces and help professionals and organizations grow through knowledge development and knowledge sharing. We welcome all kinds of knowledge institutions and organizations with an impact on society that like to help us achieve our goal by organizing events together or sharing resources.</p>
+              <p>You can also contact us if you are looking for better communication, learning, documentation, and knowledge sharing tools and feel that Offcourse may be of help.</p>
             </div>
           </div>
         </div>
