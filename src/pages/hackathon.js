@@ -59,26 +59,26 @@ const Hackathon = (props) => {
               <h2>Universities</h2>
               <ol>
                 <li>Leiden University</li>
-                  <p>https://www.universiteitleiden.nl/en/about-us/contact</p>
+                  <p><a href="https://www.universiteitleiden.nl/en/about-us/contact">https://www.universiteitleiden.nl/en/about-us/contact</a></p>
                 <li>TU Delft (Delft University of Technology)</li>
-                  <p>https://www.tudelft.nl/en/about-tu-delft/contact-and-accessibility/</p>
+                  <p><a href="https://www.tudelft.nl/en/about-tu-delft/contact-and-accessibility/">https://www.tudelft.nl/en/about-tu-delft/contact-and-accessibility/</a></p>
                 <li>Erasmus University</li>
-                  <p>https://www.eur.nl/en/contact</p>
+                  <p><a href="https://www.eur.nl/en/contact">https://www.eur.nl/en/contact</a></p>
               </ol>
               <h2>Organizations and Associations</h2>
               <ol>
                 <li>PixelBar Hackerspace</li>
                   <p>bestuur@pixelbar.nl</p>
                 <li>Dot Control</li>
-                  <p>https://dotcontrol.com/About-us/</p>
+                  <p><a href="https://dotcontrol.com/About-us/">https://dotcontrol.com/About-us/</a></p>
                 <li>Tech Meetups within 25 miles of Rotterdam</li>
-                  <p>https://www.meetup.com/cities/nl/rotterdam/tech/</p>
+                  <p><a href="https://www.meetup.com/cities/nl/rotterdam/tech/">https://www.meetup.com/cities/nl/rotterdam/tech/</a></p>
                 <li>Mobility Lab - Rotterdam</li>
-                  <p>http://www.mobilitylab.nl/</p>
+                  <p><a href="http://www.mobilitylab.nl/">http://www.mobilitylab.nl/</a></p>
                 <li>TEC ART Rotterdam</li>
-                  <p>https://2018.tecart.nl/info/partners-support/</p>
+                  <p><a href="https://2018.tecart.nl/info/partners-support/">https://2018.tecart.nl/info/partners-support/</a></p>
                 <li>World Port Hackathon</li>
-                  <p>https://worldporthackathon.com/partners/</p>
+                  <p><a href="https://worldporthackathon.com/partners/">https://worldporthackathon.com/partners/</a></p>
               </ol>
             </div>
           </div>
