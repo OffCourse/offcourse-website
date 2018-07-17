@@ -11,7 +11,7 @@ Offcourse is collaborating with Peter Troxler, Research Professor in "Revolution
 
 ## What is the Maker Movement and Makerspaces?
 
-The Maker Movement is defined by Adweek as [" the umbrella term for independent inventors, designers, and tinkerers."](https://www.adweek.com/brand-marketing/which-big-brands-are-courting-maker-movement-and-why-156315/) The movement takes on various shapes and forms depending on focus of expertise. Makerspaces are therefore, the hubs, facilities and workshops that help flourish the Maker Movement. That being said, what exactly are "*makerspaces"*?
+The Maker Movement is defined by Adweek as ["the umbrella term for independent inventors, designers, and tinkerers."](https://www.adweek.com/brand-marketing/which-big-brands-are-courting-maker-movement-and-why-156315/) The movement takes on various shapes and forms depending on focus of expertise. Makerspaces are therefore, the hubs, facilities and workshops that help flourish the Maker Movement. That being said, what exactly are "*makerspaces"*?
 
 Makerspaces are collaborating co-working environments/facilities that are used to learn , explore, share and create new innovations using either high tech and non-tech tools. The spaces have also been dubbed the "*Do-It-Yourself* schools" as these spaces help prepare those looking to hone their 21st century skills in sectors of technology, science, engineering, design and math.
 
@@ -29,10 +29,10 @@ This practical way of integration is adapting further in view of learning. [Offc
 
 → Peter Troxler:
 
-- "[Beyond Consenting Nerds](https://www.hogeschoolrotterdam.nl/onderzoek/projecten-en-publicaties/creating-010/revolutie-in-de-maakindustrie/beyond-consenting-nerds/) : *Lateral Design Patterns for New Manufacturing" by Peter Troxler*
-- "[Sharing is sparing](https://www.narcis.nl/publication/RecordID/oai:hbokennisbank.nl:sharekit_hr%3Aoai%3Asurfsharekit.nl%3A5b7a9968-ab70-479d-9cf2-0ff6a2eb33a9): *Open knowledge sharing in Fablabs"*
+- [Beyond Consenting Nerds](https://www.hogeschoolrotterdam.nl/onderzoek/projecten-en-publicaties/creating-010/revolutie-in-de-maakindustrie/beyond-consenting-nerds/) : *Lateral Design Patterns for New Manufacturing" by Peter Troxler*
+- [Sharing is sparing](https://www.narcis.nl/publication/RecordID/oai:hbokennisbank.nl:sharekit_hr%3Aoai%3Asurfsharekit.nl%3A5b7a9968-ab70-479d-9cf2-0ff6a2eb33a9): *Open knowledge sharing in Fablabs"*
 
-→ **More on the Makerspaces and Maker Movement
+→ More on the Makerspaces and Maker Movement
 
 - [https://www.makerspaces.com/what-is-a-makerspace](https://www.makerspaces.com/what-is-a-makerspace/)
 - [https://curiositycommons.wordpress.com/a-brief-history-of-makerspaces/](https://curiositycommons.wordpress.com/a-brief-history-of-makerspaces/)
