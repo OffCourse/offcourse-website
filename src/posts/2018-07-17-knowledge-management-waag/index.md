@@ -27,7 +27,7 @@ Offcourse helps knowledge heavy organisations with their knowledge management. O
 
 ## Case study Waag, Amsterdam
 
-Waag is a Knowledge Institute based in Amsterdam, the Netherlands. The institute operates at the intersection of science, technology and the arts, focusing on technology as an instrument of social change. Their organisation, of about 60 people, is built up into two divisions: a research division to gather new knowledge on the topic of science, technology and arts, and an operational division that is focused on using their knowledge through e.g. courses and workshops they give.
+[Waag](https://www.waag.org/en/home) is a Knowledge Institute based in Amsterdam, the Netherlands. The institute operates at the intersection of science, technology and the arts, focusing on technology as an instrument of social change. Their organisation, of about 60 people, is built up into two divisions: a research division to gather new knowledge on the topic of science, technology and arts, and an operational division that is focused on using their knowledge through e.g. courses and workshops they give.
 
 Due to the absence of a fitting ecosystem for knowledge management for the employees working at the Amsterdam office, knowledge generated and collected by Waag has become fragmented throughout the organisation. Waag sees a lot of potential in not only documenting that knowledge in one central place, but also to share it within and outside the organization. Different tools and systems have been tested at Waag to find the right solution. So far none of these tool fit the need for a creative solution to translate knowledge into manageable material.
 
