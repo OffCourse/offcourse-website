@@ -1,7 +1,7 @@
 ---
 path: "/blog/maker-movement"
-date: "2018-05-30"
-title: "Learning through makerspaces - the maker movement"
+date: "2018-07-20"
+title: "Learning in makerspaces - the maker movement"
 featuredImage: "maker.jpg"
 ---
 
