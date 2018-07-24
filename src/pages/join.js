@@ -76,6 +76,20 @@ const JoinPage = (props) => {
       skills: ['web & app development', 'entrepreneurship', 'online marketing'],
       image: data.joris,
     },
+    
+    {
+      name: 'Natalie Musomba',
+      tagline: 'Eager Maker',
+      skills: ['content marketing', 'copywriting', 'coding'],
+      image: 
+    },
+      
+      {
+      name: 'Eefje Leydesdorff',
+      tagline: 'Organizer of Teams',
+      skills: ['consultancy', 'team building', 'strategy'],
+      image: 
+    },
   ];
 
   return (
@@ -88,7 +102,7 @@ const JoinPage = (props) => {
       />
       <PageHeader
         title="Join"
-        subtitle="Why you should join us"
+        subtitle="Why you should join the platform"
       />
       <Section>
         <div className="ui middle aligned grid container">
