@@ -9,18 +9,18 @@ import PageHeader from '../components/PageHeader';
 import Section from '../components/Section';
 
 
-const Contribute = () => {
+const Donate = () => {
   return (
     <div>
       <Helmet
-        title="Contribute | Offcourse"
+        title="Donate | Offcourse"
         meta={[
           { name: 'description', content: 'Offcourse is an open source platform for crowdsourced learning and knowledge sharing.' },
         ]}
       />
       <PageHeader
-        title="Contribute"
-        subtitle="How to contribute to the Offcourse project"
+        title="Donate"
+        subtitle="How to contribute to the Offcourse project through a donation"
       />
       <Section>
         <div className="ui middle aligned grid container">
@@ -59,4 +59,4 @@ const Contribute = () => {
   );
 };
 
-export default Contribute;
+export default Donate;
