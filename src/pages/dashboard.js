@@ -11,9 +11,9 @@ import Section from '../components/Section';
 const Collaborate = (props) => {
   const { data } = props;
   const partners = [
-    'codeRotterdam',
-    'jinc',
-    'microsoft',
+    'dashboard1',
+    'dashboard2',
+    'dashboard3',
   ];
 
   return (
@@ -31,7 +31,7 @@ const Collaborate = (props) => {
       <Section>
         <div className="ui middle aligned grid container">
           <div className="centered row">
-            <div className="sixteen wide tablet ten wide computer column">
+            <div className="sixteen wide column">
               <p>Offcourse helps eager minds around the world gain new knowledge, develop and improve their skills, and share what they've learned. If you share the same vision, we invite you to join forces and help professionals and organizations grow through knowledge development and knowledge sharing. We welcome all kinds of knowledge institutions and organizations with an impact on society that like to help us achieve our goal by organizing events together or sharing resources.</p>
               <p>You can also contact us if you are looking for better communication, learning, documentation, and knowledge sharing tools and feel that Offcourse may be of help.</p>
             </div>
@@ -39,7 +39,7 @@ const Collaborate = (props) => {
         </div>
       </Section>
       <Section
-        title="Partners that are already in for the ride"
+        title="Designs for our dashboard"
       >
         <div className="ui grid container">
           <div className="middle aligned row">
@@ -77,18 +77,18 @@ export default Collaborate;
 
 export const query = graphql`
   query DashboardImageQuery {
-    codeRotterdam: imageSharp(id: { regex: "/../assets/img/logos/code_rotterdam.png/" }) {
-      sizes(maxWidth: 600) {
+    dashboard1: imageSharp(id: { regex: "/../assets/img/mockups/Dashboard1.png/" }) {
+      sizes(maxWidth: 1200) {
         ...GatsbyImageSharpSizes
       }
     }
-    jinc: imageSharp(id: { regex: "/../assets/img/logos/jinc.png/" }) {
-      sizes(maxWidth: 600) {
+    dashboard2: imageSharp(id: { regex: "/../assets/img/mockups/Dashboard2.png/" }) {
+      sizes(maxWidth: 1200) {
         ...GatsbyImageSharpSizes
       }
     }
-    microsoft: imageSharp(id: { regex: "/../assets/img/logos/microsoft.png/" }) {
-      sizes(maxWidth: 600) {
+    dashboard3: imageSharp(id: { regex: "/../assets/img/mockups/Dashboard3.png/" }) {
+      sizes(maxWidth: 1200) {
         ...GatsbyImageSharpSizes
       }
     }
