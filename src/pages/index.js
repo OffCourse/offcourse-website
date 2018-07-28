@@ -44,12 +44,7 @@ const IndexPage = (props) => {
               <p>Offcourse is an open source platform for crowdsourced learning and knowledge sharing. Or as we like to call it: <strong>crowdlearning</strong>.</p>
               <p>Anything you find on the web can become part of your personal learning journey: blogs, video tutorials, podcasts, you name it. Compile collections of knowledge resources to store in one place, and share them with people around the globe.</p>
               <br />
-              <Link
-                to="/sign-in"
-                className="big ui button positive"
-              >
-                GO TO PLATFORM
-              </Link>
+            
               <br className="show-for-mobile" /><br className="show-for-mobile" />
             </div>
 
@@ -170,9 +165,9 @@ const IndexPage = (props) => {
             <button
               type="button"
               className="ui huge button positive"
-              onClick={() => { navigateTo('/sign-up'); }}
+              onClick={() => { navigateTo('/join'); }}
              >
-               JOIN NOW
+               START LEARNING
             </button>
           }
         />
