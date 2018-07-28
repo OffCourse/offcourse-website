@@ -79,7 +79,7 @@ class Header extends Component {
                       this.setState({ isMenuOpen: false });
                     }}
                   >
-                    Contribute
+                    Donate
                   </BasicButton>
                 </li>
                 <li className="Header__menu-item">
