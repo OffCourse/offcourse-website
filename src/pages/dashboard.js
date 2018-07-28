@@ -19,25 +19,16 @@ const Collaborate = (props) => {
   return (
     <div>
       <Helmet
-        title="Collaborate | Offcourse"
+        title="Dashboards | Offcourse"
         meta={[
           { name: 'description', content: 'Offcourse is an open source platform for crowdsourced learning and knowledge sharing.' },
         ]}
       />
       <PageHeader
-        title="Collaborate"
-        subtitle="Why you should collaborate with us"
+        title="Dashboard"
+        subtitle="For NSVP subsidy application"
       />
-      <Section>
-        <div className="ui middle aligned grid container">
-          <div className="centered row">
-            <div className="sixteen wide column">
-              <p>Offcourse helps eager minds around the world gain new knowledge, develop and improve their skills, and share what they've learned. If you share the same vision, we invite you to join forces and help professionals and organizations grow through knowledge development and knowledge sharing. We welcome all kinds of knowledge institutions and organizations with an impact on society that like to help us achieve our goal by organizing events together or sharing resources.</p>
-              <p>You can also contact us if you are looking for better communication, learning, documentation, and knowledge sharing tools and feel that Offcourse may be of help.</p>
-            </div>
-          </div>
-        </div>
-      </Section>
+      
       <Section
         title="Designs for our dashboard"
       >
@@ -48,7 +39,7 @@ const Collaborate = (props) => {
               const image = data[partner];
 
               return (
-                <div className="eight wide tablet four wide computer column">
+                <div className="sixteen wide column">
                   <Img
                     sizes={image.sizes}
                   />
