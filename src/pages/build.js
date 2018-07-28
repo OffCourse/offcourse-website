@@ -8,18 +8,18 @@ import PageHeader from '../components/PageHeader';
 import Section from '../components/Section';
 
 
-const Build = (props) => {
+const Contribute = (props) => {
   return (
     <div>
       <Helmet
-        title="Build | Offcourse"
+        title="Contribute | Offcourse"
         meta={[
           { name: 'description', content: 'Offcourse is an open source platform for crowdsourced learning and knowledge sharing.' },
         ]}
       />
       <PageHeader
-        title="Build"
-        subtitle="How you can contribute to the platform"
+        title="Contribute"
+        subtitle="How you can practice your skills by contributing to the platform"
       />
       <Section>
         <div className="ui middle aligned grid container">
@@ -55,4 +55,4 @@ const Build = (props) => {
   );
 };
 
-export default Build;
+export default Contribute;
