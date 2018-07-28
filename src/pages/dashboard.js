@@ -77,17 +77,17 @@ export default Collaborate;
 
 export const query = graphql`
   query DashboardImageQuery {
-    dashboard1: imageSharp(id: { regex: "/../assets/img/mockups/Dashboard1.png/" }) {
+    dashboard1: imageSharp(id: { regex: "/../assets/img/mockups/Dashboard1.jpg/" }) {
       sizes(maxWidth: 1200) {
         ...GatsbyImageSharpSizes
       }
     }
-    dashboard2: imageSharp(id: { regex: "/../assets/img/mockups/Dashboard2.png/" }) {
+    dashboard2: imageSharp(id: { regex: "/../assets/img/mockups/Dashboard2.jpg/" }) {
       sizes(maxWidth: 1200) {
         ...GatsbyImageSharpSizes
       }
     }
-    dashboard3: imageSharp(id: { regex: "/../assets/img/mockups/Dashboard3.png/" }) {
+    dashboard3: imageSharp(id: { regex: "/../assets/img/mockups/Dashboard3.jpg/" }) {
       sizes(maxWidth: 1200) {
         ...GatsbyImageSharpSizes
       }
