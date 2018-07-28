@@ -76,7 +76,7 @@ const Collaborate = (props) => {
 export default Collaborate;
 
 export const query = graphql`
-  query CollaborateImageQuery {
+  query DashboardImageQuery {
     codeRotterdam: imageSharp(id: { regex: "/../assets/img/logos/code_rotterdam.png/" }) {
       sizes(maxWidth: 600) {
         ...GatsbyImageSharpSizes
