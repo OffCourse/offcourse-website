@@ -8,7 +8,7 @@ import PageHeader from '../components/PageHeader';
 import Section from '../components/Section';
 
 
-const Collaborate = (props) => {
+const Dashboard = (props) => {
   const { data } = props;
   const partners = [
     'dashboard1',
@@ -64,7 +64,7 @@ const Collaborate = (props) => {
   );
 };
 
-export default Collaborate;
+export default Dashboard;
 
 export const query = graphql`
   query DashboardImageQuery {
