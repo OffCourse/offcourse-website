@@ -26,7 +26,7 @@ const Dashboard = (props) => {
       />
       <PageHeader
         title="Dashboard"
-        subtitle="For NSVP subsidy application"
+        subtitle="For NSVP grant application"
       />
       
       <Section
