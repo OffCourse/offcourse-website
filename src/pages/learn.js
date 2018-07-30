@@ -11,7 +11,7 @@ import ProfileCard from '../components/ProfileCard';
 import Section from '../components/Section';
 
 
-const JoinPage = (props) => {
+const LearnPage = (props) => {
   const { data } = props;
   const misfits = [
     {
@@ -81,14 +81,14 @@ const JoinPage = (props) => {
   return (
     <div>
       <Helmet
-        title="Join | Offcourse"
+        title="Learn | Offcourse"
         meta={[
           { name: 'description', content: 'Offcourse is an open source platform for crowdsourced learning and knowledge sharing.' },
         ]}
       />
       <PageHeader
-        title="Join"
-        subtitle="Why you should join us"
+        title="Learn"
+        subtitle="How to start learning"
       />
       <Section>
         <div className="ui middle aligned grid container">
@@ -169,7 +169,7 @@ const JoinPage = (props) => {
   );
 };
 
-export default JoinPage;
+export default LearnPage;
 
 export const query = graphql`
   query JoinImageQuery {
