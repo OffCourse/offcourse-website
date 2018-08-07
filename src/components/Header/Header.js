@@ -55,7 +55,7 @@ class Header extends Component {
                 <li className="Header__menu-item">
                   <BasicButton
                     onClick={() => {
-                      navigateTo('/build');
+                      navigateTo('/contribute');
                       this.setState({ isMenuOpen: false });
                     }}
                   >
