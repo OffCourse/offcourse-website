@@ -98,7 +98,7 @@ const JoinPage = (props) => {
       />
       <PageHeader
         title="Join"
-        subtitle="Why you should join the platform"
+        subtitle="Why you should join the community"
       />
       <Section>
         <div className="ui middle aligned grid container">
@@ -140,7 +140,7 @@ const JoinPage = (props) => {
                  JOIN NOW
               </button>
               <br /><br />
-              <p className="c-grey">or follow us on <a href="https://twitter.com/offcourse_">Twitter</a> and  <a href="https://www.linkedin.com/company/7962249/">LinkedIn</a> and show your appreciation with #offcourse and #crowdlearning.</p>
+              <p className="c-grey">You can also help us expand the Offcourse platform and its community by becoming an <a href="http://contribute.offcourse.io/">Open Source Contributor</a>.</p>
             </div>
           )}
           title="Join Offcourse now"
@@ -183,12 +183,12 @@ export default JoinPage;
 
 export const query = graphql`
   query JoinImageQuery {
-    yeehaa: imageSharp(id: { regex: "/../assets/img/misfits/yeehaa.jpg/" }) {
+    jan-hein_bw: imageSharp(id: { regex: "/../assets/img/misfits/jan-hein_bw.jpg/" }) {
       sizes(maxWidth: 300) {
         ...GatsbyImageSharpSizes
       }
     }
-    birgit: imageSharp(id: { regex: "/../assets/img/misfits/birgit.jpg/" }) {
+    birgit_bw: imageSharp(id: { regex: "/../assets/img/misfits/birgit_bw.jpg/" }) {
       sizes(maxWidth: 300) {
         ...GatsbyImageSharpSizes
       }
@@ -198,7 +198,7 @@ export const query = graphql`
         ...GatsbyImageSharpSizes
       }
     }
-    kelly: imageSharp(id: { regex: "/../assets/img/misfits/kelly.jpg/" }) {
+    kelly_bw: imageSharp(id: { regex: "/../assets/img/misfits/kelly_bw.jpg/" }) {
       sizes(maxWidth: 300) {
         ...GatsbyImageSharpSizes
       }
@@ -213,7 +213,7 @@ export const query = graphql`
         ...GatsbyImageSharpSizes
       }
     }
-    loek: imageSharp(id: { regex: "/../assets/img/misfits/loek.jpg/" }) {
+    loek_bw: imageSharp(id: { regex: "/../assets/img/misfits/loek_bw.jpg/" }) {
       sizes(maxWidth: 300) {
         ...GatsbyImageSharpSizes
       }
@@ -228,5 +228,9 @@ export const query = graphql`
         ...GatsbyImageSharpSizes
       }
     }
+    natalie_bw: imageSharp(id: { regex: "/../assets/img/misfits/natalie_bw.jpg/" }) {
+      sizes(maxWidth: 300) {
+        ...GatsbyImageSharpSizes
+      }
   }
 `;
