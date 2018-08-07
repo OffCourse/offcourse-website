@@ -35,16 +35,6 @@ class Header extends Component {
                 <li className="Header__menu-item">
                   <BasicButton
                     onClick={() => {
-                      navigateTo('/');
-                      this.setState({ isMenuOpen: false });
-                    }}
-                  >
-                    Home
-                  </BasicButton>
-                </li>
-                <li className="Header__menu-item">
-                  <BasicButton
-                    onClick={() => {
                       navigateTo('/join');
                       this.setState({ isMenuOpen: false });
                     }}
@@ -55,21 +45,11 @@ class Header extends Component {
                 <li className="Header__menu-item">
                   <BasicButton
                     onClick={() => {
-                      navigateTo('/contribute');
-                      this.setState({ isMenuOpen: false });
-                    }}
-                  >
-                    Build
-                  </BasicButton>
-                </li>
-                <li className="Header__menu-item">
-                  <BasicButton
-                    onClick={() => {
                       navigateTo('/collaborate');
                       this.setState({ isMenuOpen: false });
                     }}
                   >
-                    Collaborate
+                    Partners
                   </BasicButton>
                 </li>
                 <li className="Header__menu-item">
@@ -85,31 +65,11 @@ class Header extends Component {
                 <li className="Header__menu-item">
                   <BasicButton
                     onClick={() => {
-                      navigateTo('/faq');
-                      this.setState({ isMenuOpen: false });
-                    }}
-                  >
-                    FAQ
-                  </BasicButton>
-                </li>
-                <li className="Header__menu-item">
-                  <BasicButton
-                    onClick={() => {
                       navigateTo('/blog');
                       this.setState({ isMenuOpen: false });
                     }}
                   >
                     Blog
-                  </BasicButton>
-                </li>
-                <li className="Header__menu-item">
-                  <BasicButton
-                    onClick={() => {
-                      navigateTo('/sign-in');
-                      this.setState({ isMenuOpen: false });
-                    }}
-                  >
-                    Go to platform
                   </BasicButton>
                 </li>
                 <li className="Header__menu-item">
@@ -120,7 +80,7 @@ class Header extends Component {
                     }}
                     positive
                   >
-                    Join now
+                    Go to platform
                   </Button>
                 </li>
               </ul>
