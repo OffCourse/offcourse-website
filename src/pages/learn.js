@@ -87,8 +87,8 @@ const JoinPage = (props) => {
         ]}
       />
       <PageHeader
-        title="Join"
-        subtitle="Why you should join us"
+        title="Learn"
+        subtitle="Start your learning journey with Offcourse"
       />
       <Section>
         <div className="ui middle aligned grid container">
@@ -125,15 +125,15 @@ const JoinPage = (props) => {
               <button
                 type="button"
                 className="ui huge button positive"
-                onClick={() => { navigateTo('/sign-up'); }}
+                onClick={() => { navigateTo(https://app.offcourse.io/flags/all); }}
                >
-                 JOIN NOW
+                 START LEARNING
               </button>
               <br /><br />
-              <p className="c-grey">or follow us on <a href="https://twitter.com/offcourse_">Twitter</a> and  <a href="https://www.linkedin.com/company/7962249/">LinkedIn</a> and show your appreciation with #offcourse and #crowdlearning.</p>
+              <p className="c-grey">and follow us on <a href="https://twitter.com/offcourse_">Twitter</a> and  <a href="https://www.linkedin.com/company/7962249/">LinkedIn</a> and show your appreciation with #offcourse and #crowdlearning.</p>
             </div>
           )}
-          title="Join offcourse now"
+          title="Start learning"
         />
       </Section>
       <Section
