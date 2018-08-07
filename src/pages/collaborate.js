@@ -39,7 +39,7 @@ const Collaborate = (props) => {
             <div className="sixteen wide tablet ten wide computer column">
               <p>Offcourse helps eager minds around the world gain new knowledge, develop and improve their skills, and share what they've learned. If you share the same vision, we invite you to join forces and help professionals and organizations grow through knowledge development and knowledge sharing. We welcome all kinds of knowledge institutions and organizations with an impact on society that like to help us achieve our goal by organizing events together or sharing resources.</p>
               <p>You can also contact us if you are looking for better communication, learning, documentation, and knowledge sharing tools and feel that Offcourse may be of help.</p>
-              <p> Read the case on our partnership with <li><Link to="/blog/knowledge-management-case-waag">Waag</Link></li> and <li><Link to="/blog/maker-movement">Peter Toxler (Hogeschool Rotterdam)</Link></li>. 
+              <p> Read the case on our partnership with <li><Link to="/blog/knowledge-management-case-waag">Waag</Link></li> and <li><Link to="/blog/maker-movement">Peter Toxler (Hogeschool Rotterdam)</Link></li>.</p>
             </div>
           </div>
         </div>
