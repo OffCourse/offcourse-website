@@ -11,25 +11,10 @@ const Footer = () => {
         <h4>Menu</h4>
         <div className="ui list">
           <div className="item">
-            <Link to="/join">Join</Link>
-          </div>
-          <div className="item">
-            <Link to="/build">Build</Link>
-          </div>
-          <div className="item">
-            <Link to="/collaborate">Collaborate</Link>
-          </div>
-          <div className="item">
-            <Link to="/donate">Donate</Link>
+            <Link to="http://contribute.offcourse.io/">Open Source contribution as a developer or designer</Link>
           </div>
           <div className="item">
             <Link to="/faq">FAQ</Link>
-          </div>
-          <div className="item">
-            <Link to="/sign-in">Go to platform</Link>
-          </div>
-          <div className="item">
-            <Link to="/sign-up">Join now</Link>
           </div>
         </div>
       </div>
