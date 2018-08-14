@@ -18,14 +18,14 @@ const JoinPage = (props) => {
       name: 'Jan Hein Hoogstad',
       tagline: 'Maker and Chief',
       skills: ['programming', 'entrepreneurship', 'problem solving', 'critical thinking'],
-      image: data.yeehaa,
+      image: data.jan-hein_bw,
     },
 
     {
       name: 'Birgit Vene',
       tagline: 'Creator of Opportunities',
       skills: ['project management', 'collaboration', 'critical thinking', 'community building'],
-      image: data.birgit,
+      image: data.birgit_bw,
     },
 
     {
@@ -39,7 +39,7 @@ const JoinPage = (props) => {
       name: 'Kelly Sinterniklaas',
       tagline: 'Ambassador of Buzz',
       skills: ['marketing', 'communication', 'copywriting'],
-      image: data.kelly,
+      image: data.kelly_bw,
     },
 
     {
@@ -60,7 +60,7 @@ const JoinPage = (props) => {
       name: 'Loek Hendriks',
       tagline: 'Enthusiastic Engineer ',
       skills: ['industrial design'],
-      image: data.loek,
+      image: data.loek_bw,
     },
 
     {
@@ -76,6 +76,16 @@ const JoinPage = (props) => {
       skills: ['web & app development', 'entrepreneurship', 'online marketing'],
       image: data.joris,
     },
+    
+    {
+      name: 'Natalie Musomba',
+      tagline: 'Eager Maker',
+      skills: ['content creation', 'copywriting', 'marketing'],
+      image: data.natalie_bw
+    },
+      
+      {
+ 
   ];
 
   return (
@@ -88,7 +98,7 @@ const JoinPage = (props) => {
       />
       <PageHeader
         title="Join"
-        subtitle="Why you should join us"
+        subtitle="Why you should join the community"
       />
       <Section>
         <div className="ui middle aligned grid container">
@@ -130,10 +140,10 @@ const JoinPage = (props) => {
                  JOIN NOW
               </button>
               <br /><br />
-              <p className="c-grey">or follow us on <a href="https://twitter.com/offcourse_">Twitter</a> and  <a href="https://www.linkedin.com/company/7962249/">LinkedIn</a> and show your appreciation with #offcourse and #crowdlearning.</p>
+              <p className="c-grey">You can also help us expand the Offcourse platform and its community by becoming an <a href="http://contribute.offcourse.io/">Open Source Contributor</a>.</p>
             </div>
           )}
-          title="Join offcourse now"
+          title="Join Offcourse now"
         />
       </Section>
       <Section
@@ -173,12 +183,12 @@ export default JoinPage;
 
 export const query = graphql`
   query JoinImageQuery {
-    yeehaa: imageSharp(id: { regex: "/../assets/img/misfits/yeehaa.jpg/" }) {
+    jan-hein_bw: imageSharp(id: { regex: "/../assets/img/misfits/jan-hein_bw.jpg/" }) {
       sizes(maxWidth: 300) {
         ...GatsbyImageSharpSizes
       }
     }
-    birgit: imageSharp(id: { regex: "/../assets/img/misfits/birgit.jpg/" }) {
+    birgit_bw: imageSharp(id: { regex: "/../assets/img/misfits/birgit_bw.jpg/" }) {
       sizes(maxWidth: 300) {
         ...GatsbyImageSharpSizes
       }
@@ -188,7 +198,7 @@ export const query = graphql`
         ...GatsbyImageSharpSizes
       }
     }
-    kelly: imageSharp(id: { regex: "/../assets/img/misfits/kelly.jpg/" }) {
+    kelly_bw: imageSharp(id: { regex: "/../assets/img/misfits/kelly_bw.jpg/" }) {
       sizes(maxWidth: 300) {
         ...GatsbyImageSharpSizes
       }
@@ -203,7 +213,7 @@ export const query = graphql`
         ...GatsbyImageSharpSizes
       }
     }
-    loek: imageSharp(id: { regex: "/../assets/img/misfits/loek.jpg/" }) {
+    loek_bw: imageSharp(id: { regex: "/../assets/img/misfits/loek_bw.jpg/" }) {
       sizes(maxWidth: 300) {
         ...GatsbyImageSharpSizes
       }
@@ -218,5 +228,9 @@ export const query = graphql`
         ...GatsbyImageSharpSizes
       }
     }
+    natalie_bw: imageSharp(id: { regex: "/../assets/img/misfits/natalie_bw.jpg/" }) {
+      sizes(maxWidth: 300) {
+        ...GatsbyImageSharpSizes
+      }
   }
 `;
