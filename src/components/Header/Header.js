@@ -45,7 +45,7 @@ class Header extends Component {
                 <li className="Header__menu-item">
                   <BasicButton
                     onClick={() => {
-                      navigateTo('/collaborate');
+                      navigateTo('/partners');
                       this.setState({ isMenuOpen: false });
                     }}
                   >
