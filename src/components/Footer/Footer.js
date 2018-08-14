@@ -8,10 +8,9 @@ const Footer = () => {
   const renderMenu = () => {
     return (
       <div>
-        <h4>Menu</h4>
         <div className="ui list">
           <div className="item">
-            <Link to="http://contribute.offcourse.io/">Open Source contribution as a developer or designer</Link>
+            <a href="http://contribute.offcourse.io/">Open Source contribution as a developer or designer</a>
           </div>
           <div className="item">
             <Link to="/faq">FAQ</Link>
@@ -24,7 +23,7 @@ const Footer = () => {
   const renderSocial = () => {
     return (
       <div>
-        <h4>Social</h4>
+        <h4>Social & Contact</h4>
         <div className="ui list">
           <div className="item">
             <a href="https://medium.com/@offcourse_io">Medium</a>
