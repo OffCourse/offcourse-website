@@ -8,7 +8,7 @@ import PageHeader from '../components/PageHeader';
 import Section from '../components/Section';
 
 
-const Collaborate = (props) => {
+const Partners = (props) => {
   const { data } = props;
   const partners = [
     'codeRotterdam',
@@ -19,6 +19,8 @@ const Collaborate = (props) => {
     'rotterdamPartners',
     'waag',
     'wetech',
+    'sanquin,
+    'bureau moeilijke dingen',
   ];
 
   return (
@@ -112,7 +114,7 @@ export const query = graphql`
         ...GatsbyImageSharpSizes
       }
     }
-    waag: imageSharp(id: { regex: "/../assets/img/logos/waag.png/" }) {
+    waag: imageSharp(id: { regex: "/../assets/img/logos/Waag-logo.png/" }) {
       sizes(maxWidth: 600) {
         ...GatsbyImageSharpSizes
       }
@@ -122,5 +124,14 @@ export const query = graphql`
         ...GatsbyImageSharpSizes
       }
     }
+    sanquin: imageSharp(id: { regex: "/../assets/img/logos/sanquin-logo.jpg/" }) {
+      sizes(maxWidth: 600) {
+        ...GatsbyImageSharpSizes
+      }
+ }
+    bureau moeilijke dingen: imageSharp(id: { regex: "/../assets/img/logos/moeilijke-dingen.png/" }) {
+      sizes(maxWidth: 600) {
+        ...GatsbyImageSharpSizes
+      }
   }
 `;
