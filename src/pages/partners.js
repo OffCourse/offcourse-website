@@ -24,14 +24,14 @@ const Collaborate = (props) => {
   return (
     <div>
       <Helmet
-        title="Collaborate | Offcourse"
+        title="Partners | Offcourse"
         meta={[
           { name: 'description', content: 'Offcourse is an open source platform for crowdsourced learning and knowledge sharing.' },
         ]}
       />
       <PageHeader
-        title="Collaborate"
-        subtitle="Why you should collaborate with us"
+        title="Partners"
+        subtitle="Possibilities for collaboration"
       />
       <Section>
         <div className="ui middle aligned grid container">
