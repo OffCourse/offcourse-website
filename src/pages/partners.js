@@ -8,7 +8,7 @@ import PageHeader from '../components/PageHeader';
 import Section from '../components/Section';
 
 
-const Collaborate = (props) => {
+const Partners = (props) => {
   const { data } = props;
   const partners = [
     'codeRotterdam',
@@ -19,6 +19,8 @@ const Collaborate = (props) => {
     'rotterdamPartners',
     'waag',
     'wetech',
+    'sanquin,
+    'bureau moeilijke dingen',
   ];
 
   return (
@@ -39,6 +41,7 @@ const Collaborate = (props) => {
             <div className="sixteen wide tablet ten wide computer column">
               <p>Offcourse helps eager minds around the world gain new knowledge, develop and improve their skills, and share what they've learned. If you share the same vision, we invite you to join forces and help professionals and organizations grow through knowledge development and knowledge sharing. We welcome all kinds of knowledge institutions and organizations with an impact on society that like to help us achieve our goal by organizing events together or sharing resources.</p>
               <p>You can also contact us if you are looking for better communication, learning, documentation, and knowledge sharing tools and feel that Offcourse may be of help.</p>
+              <p> Find some cases with other partners on our blog.</p>
             </div>
           </div>
         </div>
@@ -112,7 +115,7 @@ export const query = graphql`
         ...GatsbyImageSharpSizes
       }
     }
-    waag: imageSharp(id: { regex: "/../assets/img/logos/waag.png/" }) {
+    waag: imageSharp(id: { regex: "/../assets/img/logos/Waag-logo.png/" }) {
       sizes(maxWidth: 600) {
         ...GatsbyImageSharpSizes
       }
@@ -122,5 +125,14 @@ export const query = graphql`
         ...GatsbyImageSharpSizes
       }
     }
+    sanquin: imageSharp(id: { regex: "/../assets/img/logos/sanquin-logo.jpg/" }) {
+      sizes(maxWidth: 600) {
+        ...GatsbyImageSharpSizes
+      }
+ }
+    bureau moeilijke dingen: imageSharp(id: { regex: "/../assets/img/logos/moeilijke-dingen.png/" }) {
+      sizes(maxWidth: 600) {
+        ...GatsbyImageSharpSizes
+      }
   }
 `;
